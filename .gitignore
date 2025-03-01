@@ -1,0 +1,33 @@
+#ignore vivado except .xpr and simulation conf files
+vivado-2020/*
+!vivado-2020/*.xpr
+!vivado-2020/*.wcfg
+
+
+projets/test_FAT32/vivado-2020/*
+!projets/test_FAT32/vivado-2020/*.xpr
+!projets/test_FAT32/vivado-2020/*.wcfg
+
+projets/mesure_perf/vivado-2020/*
+!projets/mesure_perf/vivado-2020/*.xpr
+!projets/mesure_perf/vivado-2020/*.wcfg
+
+
+validation/read/*
+validation/write/*
+validation/SDcard_FAT32/*.cf
+
+# flush vivado logs file
+**vivado*.jou
+**vivado*.str
+**vivado*.log
+**vivado*.debug
+**vivado_pid*.zip
+.Xil
+
+# do not push results and fat image that are *too* big
+projets/mesure_perf/results/*
+projets/test_FAT32/format_parameters/*
+
+
+.vscode/settings.json

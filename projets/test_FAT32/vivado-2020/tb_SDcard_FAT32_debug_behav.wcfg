@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="SDcard_FAT32_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="SDcard_FAT32_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="501000001fs"></ZoomEndTime>
+      <Cursor1Time time="138825000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="204"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="25" />
+   <wvobject type="logic" fp_name="/SDcard_FAT32_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SDcard_FAT32_tb/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SDcard_FAT32_tb/sw">
+      <obj_property name="ElementShortName">sw[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SDcard_FAT32_tb/led">
+      <obj_property name="ElementShortName">led[15:0]</obj_property>
+      <obj_property name="ObjectShortName">led[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SDcard_FAT32_tb/recv_dout">
+      <obj_property name="ElementShortName">recv_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">recv_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SDcard_FAT32_tb/recv_den">
+      <obj_property name="ElementShortName">recv_den</obj_property>
+      <obj_property name="ObjectShortName">recv_den</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/SDcard_FAT32_tb/recv_cnt">
+      <obj_property name="ElementShortName">recv_cnt</obj_property>
+      <obj_property name="ObjectShortName">recv_cnt</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SDcard_FAT32_tb/send_din">
+      <obj_property name="ElementShortName">send_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">send_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SDcard_FAT32_tb/send_den">
+      <obj_property name="ElementShortName">send_den</obj_property>
+      <obj_property name="ObjectShortName">send_den</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/SDcard_FAT32_tb/send_bsy">
+      <obj_property name="ElementShortName">send_bsy</obj_property>
+      <obj_property name="ObjectShortName">send_bsy</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/SDcard_FAT32_tb/address">
+      <obj_property name="ElementShortName">address[15:0]</obj_property>
+      <obj_property name="ObjectShortName">address[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider76" type="divider">
+      <obj_property name="label">SDcard FAT32</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#FF0000</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/SDcard_FAT32_tb/SDcard_FAT/inst_state">
+      <obj_property name="ElementShortName">inst_state</obj_property>
+      <obj_property name="ObjectShortName">inst_state</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group100">
+      <obj_property name="label">CMD Arguments</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/recv_cmd">
+         <obj_property name="ElementShortName">recv_cmd[7:0]</obj_property>
+         <obj_property name="ObjectShortName">recv_cmd[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/recv_addr">
+         <obj_property name="ElementShortName">recv_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">recv_addr[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/recv_word">
+         <obj_property name="ElementShortName">recv_word[31:0]</obj_property>
+         <obj_property name="ObjectShortName">recv_word[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/recv_stream">
+         <obj_property name="ElementShortName">recv_stream[7:0]</obj_property>
+         <obj_property name="ObjectShortName">recv_stream[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/recv_size_b">
+         <obj_property name="ElementShortName">recv_size_b[15:0]</obj_property>
+         <obj_property name="ObjectShortName">recv_size_b[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/SDcard_FAT32_tb/SDcard_FAT/recv_size">
+         <obj_property name="ElementShortName">recv_size</obj_property>
+         <obj_property name="ObjectShortName">recv_size</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="other" fp_name="/SDcard_FAT32_tb/SDcard_FAT/recv_bytes_cnt">
+      <obj_property name="ElementShortName">recv_bytes_cnt</obj_property>
+      <obj_property name="ObjectShortName">recv_bytes_cnt</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/SDcard_FAT32_tb/SDcard_FAT/stream_bytes_cnt">
+      <obj_property name="ElementShortName">stream_bytes_cnt</obj_property>
+      <obj_property name="ObjectShortName">stream_bytes_cnt</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/SDcard_FAT32_tb/SDcard_FAT/word_cnt">
+      <obj_property name="ElementShortName">word_cnt</obj_property>
+      <obj_property name="ObjectShortName">word_cnt</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/SDcard_FAT32_tb/SDcard_FAT/bytes_in_word_cnt">
+      <obj_property name="ElementShortName">bytes_in_word_cnt</obj_property>
+      <obj_property name="ObjectShortName">bytes_in_word_cnt</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group61">
+      <obj_property name="label">REGISTERS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/reg_addr">
+         <obj_property name="ElementShortName">reg_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_addr[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/reg_in">
+         <obj_property name="ElementShortName">reg_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/SDcard_FAT32_tb/SDcard_FAT/reg_wen">
+         <obj_property name="ElementShortName">reg_wen</obj_property>
+         <obj_property name="ObjectShortName">reg_wen</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/reg_out">
+         <obj_property name="ElementShortName">reg_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_out[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#0000FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/Registers_manager/led_reg">
+         <obj_property name="ElementShortName">led_reg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">led_reg[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/Registers_manager/sw_reg">
+         <obj_property name="ElementShortName">sw_reg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sw_reg[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/Registers_manager/io_reg">
+         <obj_property name="ElementShortName">io_reg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">io_reg[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/Registers_manager/reg1_dout">
+         <obj_property name="ElementShortName">reg1_dout[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg1_dout[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/Registers_manager/reg2_dout">
+         <obj_property name="ElementShortName">reg2_dout[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg2_dout[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/Registers_manager/reg3_dout">
+         <obj_property name="ElementShortName">reg3_dout[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg3_dout[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/Registers_manager/reg4_dout">
+         <obj_property name="ElementShortName">reg4_dout[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg4_dout[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="divider56" type="divider">
+      <obj_property name="label">FIFO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#FAAFBE</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group55">
+      <obj_property name="label">FIFO RECV</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/FIFO_recv/data_in">
+         <obj_property name="ElementShortName">data_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/SDcard_FAT32_tb/SDcard_FAT/FIFO_recv/new_data">
+         <obj_property name="ElementShortName">new_data</obj_property>
+         <obj_property name="ObjectShortName">new_data</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/FIFO_recv/data_out">
+         <obj_property name="ElementShortName">data_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/SDcard_FAT32_tb/SDcard_FAT/FIFO_recv/data_read">
+         <obj_property name="ElementShortName">data_read</obj_property>
+         <obj_property name="ObjectShortName">data_read</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/SDcard_FAT32_tb/SDcard_FAT/FIFO_recv/empty">
+         <obj_property name="ElementShortName">empty</obj_property>
+         <obj_property name="ObjectShortName">empty</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/SDcard_FAT32_tb/SDcard_FAT/FIFO_recv/full">
+         <obj_property name="ElementShortName">full</obj_property>
+         <obj_property name="ObjectShortName">full</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/FIFO_recv/FIFO">
+         <obj_property name="ElementShortName">FIFO[0:1023][31:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO[0:1023][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group57">
+      <obj_property name="label">FIFO SEND</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/FIFO_send/data_in">
+         <obj_property name="ElementShortName">data_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/SDcard_FAT32_tb/SDcard_FAT/FIFO_send/new_data">
+         <obj_property name="ElementShortName">new_data</obj_property>
+         <obj_property name="ObjectShortName">new_data</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/FIFO_send/data_out">
+         <obj_property name="ElementShortName">data_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/SDcard_FAT32_tb/SDcard_FAT/FIFO_send/data_read">
+         <obj_property name="ElementShortName">data_read</obj_property>
+         <obj_property name="ObjectShortName">data_read</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/SDcard_FAT32_tb/SDcard_FAT/FIFO_send/empty">
+         <obj_property name="ElementShortName">empty</obj_property>
+         <obj_property name="ObjectShortName">empty</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/SDcard_FAT32_tb/SDcard_FAT/FIFO_send/full">
+         <obj_property name="ElementShortName">full</obj_property>
+         <obj_property name="ObjectShortName">full</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/FIFO_send/FIFO">
+         <obj_property name="ElementShortName">FIFO[0:1023][31:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO[0:1023][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="divider60" type="divider">
+      <obj_property name="label">UART</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#00FFFF</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group58">
+      <obj_property name="label">UART SEND</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/UART_send_din">
+         <obj_property name="ElementShortName">UART_send_din[7:0]</obj_property>
+         <obj_property name="ObjectShortName">UART_send_din[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/SDcard_FAT32_tb/SDcard_FAT/UART_send_den">
+         <obj_property name="ElementShortName">UART_send_den</obj_property>
+         <obj_property name="ObjectShortName">UART_send_den</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/SDcard_FAT32_tb/SDcard_FAT/UART_send_bsy">
+         <obj_property name="ElementShortName">UART_send_bsy</obj_property>
+         <obj_property name="ObjectShortName">UART_send_bsy</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/SDcard_FAT32_tb/SDcard_FAT/UART_bytes_sent">
+         <obj_property name="ElementShortName">UART_bytes_sent</obj_property>
+         <obj_property name="ObjectShortName">UART_bytes_sent</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/UART_send_word">
+         <obj_property name="ElementShortName">UART_send_word[23:0]</obj_property>
+         <obj_property name="ObjectShortName">UART_send_word[23:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/SDcard_FAT32_tb/SDcard_FAT/UART_send_parse">
+         <obj_property name="ElementShortName">UART_send_parse</obj_property>
+         <obj_property name="ObjectShortName">UART_send_parse</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group59">
+      <obj_property name="label">UART RECV</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/SDcard_FAT32_tb/SDcard_FAT/UART_recv_dout">
+         <obj_property name="ElementShortName">UART_recv_dout[7:0]</obj_property>
+         <obj_property name="ObjectShortName">UART_recv_dout[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/SDcard_FAT32_tb/SDcard_FAT/UART_recv_den">
+         <obj_property name="ElementShortName">UART_recv_den</obj_property>
+         <obj_property name="ObjectShortName">UART_recv_den</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,2667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_SDcard_FAT32_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="data_bus_pkg" />
+            <top_module name="tb_SDcard_FAT32" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1646428073fs"></ZoomStartTime>
+      <ZoomEndTime time="1647368074fs"></ZoomEndTime>
+      <Cursor1Time time="1385355000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="232"></NameColumnWidth>
+      <ValueColumnWidth column_width="112"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="36" />
+   <wvobject type="logic" fp_name="/tb_SDcard_FAT32/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_SDcard_FAT32/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/module_fsm">
+      <obj_property name="ElementShortName">module_fsm</obj_property>
+      <obj_property name="ObjectShortName">module_fsm</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/busy">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_data_out">
+      <obj_property name="ElementShortName">SD_data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SD_data_out[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/filename">
+      <obj_property name="ElementShortName">filename[87:0]</obj_property>
+      <obj_property name="ObjectShortName">filename[87:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/open_file">
+      <obj_property name="ElementShortName">open_file</obj_property>
+      <obj_property name="ObjectShortName">open_file</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/close_file">
+      <obj_property name="ElementShortName">close_file</obj_property>
+      <obj_property name="ObjectShortName">close_file</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/read_write">
+      <obj_property name="ElementShortName">read_write</obj_property>
+      <obj_property name="ObjectShortName">read_write</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/eject_card">
+      <obj_property name="ElementShortName">eject_card</obj_property>
+      <obj_property name="ObjectShortName">eject_card</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_opened">
+      <obj_property name="ElementShortName">file_opened[0:0]</obj_property>
+      <obj_property name="ObjectShortName">file_opened[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group5268">
+      <obj_property name="label">inout data,...</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/data_in">
+         <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/data_out">
+         <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/enable_in">
+         <obj_property name="ElementShortName">enable_in[0:0]</obj_property>
+         <obj_property name="ObjectShortName">enable_in[0:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/enable_out">
+         <obj_property name="ElementShortName">enable_out[0:0]</obj_property>
+         <obj_property name="ObjectShortName">enable_out[0:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group5242">
+      <obj_property name="label">operation mux</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/busy_i">
+         <obj_property name="ElementShortName">busy_i</obj_property>
+         <obj_property name="ObjectShortName">busy_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/user_admin_op">
+         <obj_property name="ElementShortName">user_admin_op</obj_property>
+         <obj_property name="ObjectShortName">user_admin_op</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/user_file_op">
+         <obj_property name="ElementShortName">user_file_op</obj_property>
+         <obj_property name="ObjectShortName">user_file_op</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/user_op_bsy">
+         <obj_property name="ElementShortName">user_op_bsy</obj_property>
+         <obj_property name="ObjectShortName">user_op_bsy</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/open_file_buff">
+         <obj_property name="ElementShortName">open_file_buff</obj_property>
+         <obj_property name="ObjectShortName">open_file_buff</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/close_file_buff">
+         <obj_property name="ElementShortName">close_file_buff</obj_property>
+         <obj_property name="ObjectShortName">close_file_buff</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/open_dir_buff">
+         <obj_property name="ElementShortName">open_dir_buff</obj_property>
+         <obj_property name="ObjectShortName">open_dir_buff</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/close_dir_buff">
+         <obj_property name="ElementShortName">close_dir_buff</obj_property>
+         <obj_property name="ObjectShortName">close_dir_buff</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_id_in_reg">
+         <obj_property name="ElementShortName">file_id_in_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">file_id_in_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/read_write_in_reg">
+         <obj_property name="ElementShortName">read_write_in_reg</obj_property>
+         <obj_property name="ObjectShortName">read_write_in_reg</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/filename_in_reg">
+         <obj_property name="ElementShortName">filename_in_reg[87:0]</obj_property>
+         <obj_property name="ObjectShortName">filename_in_reg[87:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/date_time_in_reg">
+         <obj_property name="ElementShortName">date_time_in_reg[39:0]</obj_property>
+         <obj_property name="ObjectShortName">date_time_in_reg[39:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/reserv_clust_in_reg">
+         <obj_property name="ElementShortName">reserv_clust_in_reg[21:0]</obj_property>
+         <obj_property name="ObjectShortName">reserv_clust_in_reg[21:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/eject_in_reg">
+         <obj_property name="ElementShortName">eject_in_reg</obj_property>
+         <obj_property name="ObjectShortName">eject_in_reg</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/reset_in_reg">
+         <obj_property name="ElementShortName">reset_in_reg</obj_property>
+         <obj_property name="ObjectShortName">reset_in_reg</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/format_in_reg">
+         <obj_property name="ElementShortName">format_in_reg</obj_property>
+         <obj_property name="ObjectShortName">format_in_reg</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/not_a_file_op">
+         <obj_property name="ElementShortName">not_a_file_op</obj_property>
+         <obj_property name="ObjectShortName">not_a_file_op</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/start_eject">
+         <obj_property name="ElementShortName">start_eject</obj_property>
+         <obj_property name="ObjectShortName">start_eject</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/ejecting_SDcard">
+         <obj_property name="ElementShortName">ejecting_SDcard</obj_property>
+         <obj_property name="ObjectShortName">ejecting_SDcard</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/eject_busy">
+         <obj_property name="ElementShortName">eject_busy</obj_property>
+         <obj_property name="ObjectShortName">eject_busy</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/load_file_to_close">
+         <obj_property name="ElementShortName">load_file_to_close</obj_property>
+         <obj_property name="ObjectShortName">load_file_to_close</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_to_close_shift">
+         <obj_property name="ElementShortName">file_to_close_shift[0:0]</obj_property>
+         <obj_property name="ObjectShortName">file_to_close_shift[0:0]</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_to_close_id">
+         <obj_property name="ElementShortName">file_to_close_id</obj_property>
+         <obj_property name="ObjectShortName">file_to_close_id</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_to_close_found">
+         <obj_property name="ElementShortName">file_to_close_found</obj_property>
+         <obj_property name="ObjectShortName">file_to_close_found</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/all_file_closed">
+         <obj_property name="ElementShortName">all_file_closed</obj_property>
+         <obj_property name="ObjectShortName">all_file_closed</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group179">
+      <obj_property name="label">SDcard signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_block_num">
+         <obj_property name="ElementShortName">SD_block_num[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SD_block_num[31:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_op_buff">
+         <obj_property name="ElementShortName">SD_op_buff[2:0]</obj_property>
+         <obj_property name="ObjectShortName">SD_op_buff[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_read_blk">
+         <obj_property name="ElementShortName">SD_read_blk</obj_property>
+         <obj_property name="ObjectShortName">SD_read_blk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_write_blk">
+         <obj_property name="ElementShortName">SD_write_blk</obj_property>
+         <obj_property name="ObjectShortName">SD_write_blk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_erase_blk">
+         <obj_property name="ElementShortName">SD_erase_blk</obj_property>
+         <obj_property name="ObjectShortName">SD_erase_blk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_multiple">
+         <obj_property name="ElementShortName">SD_multiple</obj_property>
+         <obj_property name="ObjectShortName">SD_multiple</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_busy">
+         <obj_property name="ElementShortName">SD_busy</obj_property>
+         <obj_property name="ObjectShortName">SD_busy</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_err_code">
+         <obj_property name="ElementShortName">SD_err_code[3:0]</obj_property>
+         <obj_property name="ObjectShortName">SD_err_code[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_nb_blocks">
+         <obj_property name="ElementShortName">SD_nb_blocks[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SD_nb_blocks[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_buffer">
+         <obj_property name="ElementShortName">SD_buffer[2:0]</obj_property>
+         <obj_property name="ObjectShortName">SD_buffer[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_address">
+         <obj_property name="ElementShortName">SD_address[8:0]</obj_property>
+         <obj_property name="ObjectShortName">SD_address[8:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_write">
+         <obj_property name="ElementShortName">SD_write</obj_property>
+         <obj_property name="ObjectShortName">SD_write</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_data_in">
+         <obj_property name="ElementShortName">SD_data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SD_data_in[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group145">
+      <obj_property name="label">Boot Record</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/BR_fsm">
+         <obj_property name="ElementShortName">BR_fsm</obj_property>
+         <obj_property name="ObjectShortName">BR_fsm</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/BR_error">
+         <obj_property name="ElementShortName">BR_error</obj_property>
+         <obj_property name="ObjectShortName">BR_error</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/BR_bytes_cnt">
+         <obj_property name="ElementShortName">BR_bytes_cnt</obj_property>
+         <obj_property name="ObjectShortName">BR_bytes_cnt</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/BR_block_num">
+         <obj_property name="ElementShortName">BR_block_num[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BR_block_num[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/BR_loc_buffer">
+         <obj_property name="ElementShortName">BR_loc_buffer[2:0]</obj_property>
+         <obj_property name="ObjectShortName">BR_loc_buffer[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/BR_address">
+         <obj_property name="ElementShortName">BR_address[8:0]</obj_property>
+         <obj_property name="ObjectShortName">BR_address[8:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/nb_total_cluster">
+         <obj_property name="ElementShortName">nb_total_cluster[31:0]</obj_property>
+         <obj_property name="ObjectShortName">nb_total_cluster[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="group71">
+         <obj_property name="label">BR parameters</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/jump_code_NOP">
+            <obj_property name="ElementShortName">jump_code_NOP[23:0]</obj_property>
+            <obj_property name="ObjectShortName">jump_code_NOP[23:0]</obj_property>
+            <obj_property name="CustomSignalColor">#00FF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/OEM_name">
+            <obj_property name="ElementShortName">OEM_name[63:0]</obj_property>
+            <obj_property name="ObjectShortName">OEM_name[63:0]</obj_property>
+            <obj_property name="CustomSignalColor">#00FF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/bytes_per_sector">
+            <obj_property name="ElementShortName">bytes_per_sector[15:0]</obj_property>
+            <obj_property name="ObjectShortName">bytes_per_sector[15:0]</obj_property>
+            <obj_property name="CustomSignalColor">#808080</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/sectors_per_cluster">
+            <obj_property name="ElementShortName">sectors_per_cluster[7:0]</obj_property>
+            <obj_property name="ObjectShortName">sectors_per_cluster[7:0]</obj_property>
+            <obj_property name="CustomSignalColor">#808080</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/reserved_sectors">
+            <obj_property name="ElementShortName">reserved_sectors[15:0]</obj_property>
+            <obj_property name="ObjectShortName">reserved_sectors[15:0]</obj_property>
+            <obj_property name="CustomSignalColor">#808080</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/nb_FAT">
+            <obj_property name="ElementShortName">nb_FAT[7:0]</obj_property>
+            <obj_property name="ObjectShortName">nb_FAT[7:0]</obj_property>
+            <obj_property name="CustomSignalColor">#808080</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/media_descriptor">
+            <obj_property name="ElementShortName">media_descriptor[7:0]</obj_property>
+            <obj_property name="ObjectShortName">media_descriptor[7:0]</obj_property>
+            <obj_property name="CustomSignalColor">#00FF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/sectors_per_track">
+            <obj_property name="ElementShortName">sectors_per_track[15:0]</obj_property>
+            <obj_property name="ObjectShortName">sectors_per_track[15:0]</obj_property>
+            <obj_property name="CustomSignalColor">#00FF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/nb_heads">
+            <obj_property name="ElementShortName">nb_heads[15:0]</obj_property>
+            <obj_property name="ObjectShortName">nb_heads[15:0]</obj_property>
+            <obj_property name="CustomSignalColor">#00FF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/nb_hidden_sectors">
+            <obj_property name="ElementShortName">nb_hidden_sectors[31:0]</obj_property>
+            <obj_property name="ObjectShortName">nb_hidden_sectors[31:0]</obj_property>
+            <obj_property name="CustomSignalColor">#00FF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/nb_sectors_in_partition">
+            <obj_property name="ElementShortName">nb_sectors_in_partition[31:0]</obj_property>
+            <obj_property name="ObjectShortName">nb_sectors_in_partition[31:0]</obj_property>
+            <obj_property name="CustomSignalColor">#00FF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/nb_sectors_per_FAT">
+            <obj_property name="ElementShortName">nb_sectors_per_FAT[31:0]</obj_property>
+            <obj_property name="ObjectShortName">nb_sectors_per_FAT[31:0]</obj_property>
+            <obj_property name="CustomSignalColor">#808080</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/active_FAT">
+            <obj_property name="ElementShortName">active_FAT[15:0]</obj_property>
+            <obj_property name="ObjectShortName">active_FAT[15:0]</obj_property>
+            <obj_property name="CustomSignalColor">#00FF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/root_directory_cluster">
+            <obj_property name="ElementShortName">root_directory_cluster[31:0]</obj_property>
+            <obj_property name="ObjectShortName">root_directory_cluster[31:0]</obj_property>
+            <obj_property name="CustomSignalColor">#808080</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/sector_nb_file_system_info">
+            <obj_property name="ElementShortName">sector_nb_file_system_info[15:0]</obj_property>
+            <obj_property name="ObjectShortName">sector_nb_file_system_info[15:0]</obj_property>
+            <obj_property name="CustomSignalColor">#808080</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/sector_nb_backup_boot_sector">
+            <obj_property name="ElementShortName">sector_nb_backup_boot_sector[15:0]</obj_property>
+            <obj_property name="ObjectShortName">sector_nb_backup_boot_sector[15:0]</obj_property>
+            <obj_property name="CustomSignalColor">#00FF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/logical_drive_nb">
+            <obj_property name="ElementShortName">logical_drive_nb[7:0]</obj_property>
+            <obj_property name="ObjectShortName">logical_drive_nb[7:0]</obj_property>
+            <obj_property name="CustomSignalColor">#00FF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/extended_signature">
+            <obj_property name="ElementShortName">extended_signature[7:0]</obj_property>
+            <obj_property name="ObjectShortName">extended_signature[7:0]</obj_property>
+            <obj_property name="CustomSignalColor">#00FF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/serial_nb_of_partition">
+            <obj_property name="ElementShortName">serial_nb_of_partition[31:0]</obj_property>
+            <obj_property name="ObjectShortName">serial_nb_of_partition[31:0]</obj_property>
+            <obj_property name="CustomSignalColor">#00FF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/volume_name_of_partition">
+            <obj_property name="ElementShortName">volume_name_of_partition[87:0]</obj_property>
+            <obj_property name="ObjectShortName">volume_name_of_partition[87:0]</obj_property>
+            <obj_property name="CustomSignalColor">#00FF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_name">
+            <obj_property name="ElementShortName">FAT_name[63:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_name[63:0]</obj_property>
+            <obj_property name="CustomSignalColor">#00FF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/boot_signature">
+            <obj_property name="ElementShortName">boot_signature[15:0]</obj_property>
+            <obj_property name="ObjectShortName">boot_signature[15:0]</obj_property>
+            <obj_property name="CustomSignalColor">#00FF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/BR_nb_free_cluster">
+            <obj_property name="ElementShortName">BR_nb_free_cluster[31:0]</obj_property>
+            <obj_property name="ObjectShortName">BR_nb_free_cluster[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/recent_cluster">
+            <obj_property name="ElementShortName">recent_cluster[31:0]</obj_property>
+            <obj_property name="ObjectShortName">recent_cluster[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group146">
+      <obj_property name="label">FAT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group140">
+         <obj_property name="label">check FATs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_fsm">
+            <obj_property name="ElementShortName">FAT_fsm</obj_property>
+            <obj_property name="ObjectShortName">FAT_fsm</obj_property>
+            <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_block_num">
+            <obj_property name="ElementShortName">FAT_block_num[31:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_block_num[31:0]</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_block_num_1">
+            <obj_property name="ElementShortName">FAT_block_num_1[31:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_block_num_1[31:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_block_num_k">
+            <obj_property name="ElementShortName">FAT_block_num_k[31:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_block_num_k[31:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_op_buff">
+            <obj_property name="ElementShortName">FAT_op_buff[2:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_op_buff[2:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_loc_buffer">
+            <obj_property name="ElementShortName">FAT_loc_buffer[2:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_loc_buffer[2:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_address">
+            <obj_property name="ElementShortName">FAT_address[8:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_address[8:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_multiple">
+            <obj_property name="ElementShortName">FAT_multiple</obj_property>
+            <obj_property name="ObjectShortName">FAT_multiple</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_nb_fat_check">
+            <obj_property name="ElementShortName">FAT_nb_fat_check[7:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_nb_fat_check[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_check_last_addr">
+            <obj_property name="ElementShortName">FAT_check_last_addr</obj_property>
+            <obj_property name="ObjectShortName">FAT_check_last_addr</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_check_sector_done">
+            <obj_property name="ElementShortName">FAT_check_sector_done</obj_property>
+            <obj_property name="ObjectShortName">FAT_check_sector_done</obj_property>
+            <obj_property name="CustomSignalColor">#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_difference">
+            <obj_property name="ElementShortName">FAT_difference</obj_property>
+            <obj_property name="ObjectShortName">FAT_difference</obj_property>
+            <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_nb_correct">
+            <obj_property name="ElementShortName">FAT_nb_correct</obj_property>
+            <obj_property name="ObjectShortName">FAT_nb_correct</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_nb_diff">
+            <obj_property name="ElementShortName">FAT_nb_diff</obj_property>
+            <obj_property name="ObjectShortName">FAT_nb_diff</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_1_buffer">
+            <obj_property name="ElementShortName">FAT_1_buffer[7:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_1_buffer[7:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group139">
+         <obj_property name="label">free clusters</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_free_clusters_start">
+            <obj_property name="ElementShortName">FAT_free_clusters_start[27:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_free_clusters_start[27:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_free_clusters_cnt">
+            <obj_property name="ElementShortName">FAT_free_clusters_cnt[27:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_free_clusters_cnt[27:0]</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_nb_free_clusters">
+            <obj_property name="ElementShortName">FAT_nb_free_clusters</obj_property>
+            <obj_property name="ObjectShortName">FAT_nb_free_clusters</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_chain_to_store">
+            <obj_property name="ElementShortName">FAT_chain_to_store[55:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_chain_to_store[55:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_new_chain_to_store">
+            <obj_property name="ElementShortName">FAT_new_chain_to_store</obj_property>
+            <obj_property name="ObjectShortName">FAT_new_chain_to_store</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_store_last_chain">
+            <obj_property name="ElementShortName">FAT_store_last_chain</obj_property>
+            <obj_property name="ObjectShortName">FAT_store_last_chain</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_cluster">
+            <obj_property name="ElementShortName">FAT_cluster[31:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_cluster[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_bytes_cnt">
+            <obj_property name="ElementShortName">FAT_bytes_cnt</obj_property>
+            <obj_property name="ObjectShortName">FAT_bytes_cnt</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_cluster_cnt_dly">
+            <obj_property name="ElementShortName">FAT_cluster_cnt_dly</obj_property>
+            <obj_property name="ObjectShortName">FAT_cluster_cnt_dly</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_cluster_cnt">
+            <obj_property name="ElementShortName">FAT_cluster_cnt[27:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_cluster_cnt[27:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_new_cluster">
+            <obj_property name="ElementShortName">FAT_new_cluster</obj_property>
+            <obj_property name="ObjectShortName">FAT_new_cluster</obj_property>
+            <obj_property name="CustomSignalColor">#00FF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group3988">
+         <obj_property name="label">free fragment</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_frag_table">
+            <obj_property name="ElementShortName">free_frag_table[0:511][55:0]</obj_property>
+            <obj_property name="ObjectShortName">free_frag_table[0:511][55:0]</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_frag_read_ptr">
+            <obj_property name="ElementShortName">free_frag_read_ptr</obj_property>
+            <obj_property name="ObjectShortName">free_frag_read_ptr</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_frag_write_ptr">
+            <obj_property name="ElementShortName">free_frag_write_ptr</obj_property>
+            <obj_property name="ObjectShortName">free_frag_write_ptr</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_frag_write_en">
+            <obj_property name="ElementShortName">free_frag_write_en</obj_property>
+            <obj_property name="ObjectShortName">free_frag_write_en</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_frag_table_size">
+            <obj_property name="ElementShortName">free_frag_table_size</obj_property>
+            <obj_property name="ObjectShortName">free_frag_table_size</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_frag_table_full">
+            <obj_property name="ElementShortName">free_frag_table_full</obj_property>
+            <obj_property name="ObjectShortName">free_frag_table_full</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_frag_read">
+            <obj_property name="ElementShortName">free_frag_read[55:0]</obj_property>
+            <obj_property name="ObjectShortName">free_frag_read[55:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_frag_to_write">
+            <obj_property name="ElementShortName">free_frag_to_write[55:0]</obj_property>
+            <obj_property name="ObjectShortName">free_frag_to_write[55:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/store_new_fragment">
+            <obj_property name="ElementShortName">store_new_fragment</obj_property>
+            <obj_property name="ObjectShortName">store_new_fragment</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/fragment_ordering">
+            <obj_property name="ElementShortName">fragment_ordering</obj_property>
+            <obj_property name="ObjectShortName">fragment_ordering</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/new_free_frag">
+            <obj_property name="ElementShortName">new_free_frag[55:0]</obj_property>
+            <obj_property name="ObjectShortName">new_free_frag[55:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/new_free_frag_inserted">
+            <obj_property name="ElementShortName">new_free_frag_inserted</obj_property>
+            <obj_property name="ObjectShortName">new_free_frag_inserted</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group5083">
+         <obj_property name="label">free fragment given</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/current_frag_cluster">
+            <obj_property name="ElementShortName">current_frag_cluster[27:0]</obj_property>
+            <obj_property name="ObjectShortName">current_frag_cluster[27:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/current_frag_size">
+            <obj_property name="ElementShortName">current_frag_size[27:0]</obj_property>
+            <obj_property name="ObjectShortName">current_frag_size[27:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/request_frag">
+            <obj_property name="ElementShortName">request_frag</obj_property>
+            <obj_property name="ObjectShortName">request_frag</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/request_frag_size">
+            <obj_property name="ElementShortName">request_frag_size[21:0]</obj_property>
+            <obj_property name="ObjectShortName">request_frag_size[21:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_out">
+            <obj_property name="ElementShortName">frag_out</obj_property>
+            <obj_property name="ObjectShortName">frag_out</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group175">
+      <obj_property name="label">FD : Find files</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/check_fd_fsm">
+         <obj_property name="ElementShortName">check_fd_fsm</obj_property>
+         <obj_property name="ObjectShortName">check_fd_fsm</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="group136">
+         <obj_property name="label">first free fd found</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_fd_found">
+            <obj_property name="ElementShortName">free_fd_found</obj_property>
+            <obj_property name="ObjectShortName">free_fd_found</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_fd_sector">
+            <obj_property name="ElementShortName">free_fd_sector[31:0]</obj_property>
+            <obj_property name="ObjectShortName">free_fd_sector[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_fd_address">
+            <obj_property name="ElementShortName">free_fd_address[3:0]</obj_property>
+            <obj_property name="ObjectShortName">free_fd_address[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_data">
+            <obj_property name="ElementShortName">FD_data[7:0]</obj_property>
+            <obj_property name="ObjectShortName">FD_data[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_data_buffer">
+            <obj_property name="ElementShortName">FD_data_buffer[79:0]</obj_property>
+            <obj_property name="ObjectShortName">FD_data_buffer[79:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_bytes_cnt">
+         <obj_property name="ElementShortName">FD_bytes_cnt</obj_property>
+         <obj_property name="ObjectShortName">FD_bytes_cnt</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_loc_buffer">
+         <obj_property name="ElementShortName">FD_loc_buffer[2:0]</obj_property>
+         <obj_property name="ObjectShortName">FD_loc_buffer[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_intern_addr">
+         <obj_property name="ElementShortName">FD_intern_addr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">FD_intern_addr[4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_fd_addr">
+         <obj_property name="ElementShortName">FD_fd_addr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">FD_fd_addr[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_buff_addr">
+         <obj_property name="ElementShortName">FD_buff_addr[8:0]</obj_property>
+         <obj_property name="ObjectShortName">FD_buff_addr[8:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_block_num">
+         <obj_property name="ElementShortName">FD_block_num[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FD_block_num[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_sector_in_clust">
+         <obj_property name="ElementShortName">FD_sector_in_clust[7:0]</obj_property>
+         <obj_property name="ObjectShortName">FD_sector_in_clust[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_current_cluster">
+         <obj_property name="ElementShortName">FD_current_cluster[27:0]</obj_property>
+         <obj_property name="ObjectShortName">FD_current_cluster[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_next_cluster">
+         <obj_property name="ElementShortName">FD_next_cluster[27:0]</obj_property>
+         <obj_property name="ObjectShortName">FD_next_cluster[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_name_diff">
+         <obj_property name="ElementShortName">FD_name_diff</obj_property>
+         <obj_property name="ObjectShortName">FD_name_diff</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_name">
+         <obj_property name="ElementShortName">FD_name[87:0]</obj_property>
+         <obj_property name="ObjectShortName">FD_name[87:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_name_buffer">
+         <obj_property name="ElementShortName">FD_name_buffer[87:0]</obj_property>
+         <obj_property name="ObjectShortName">FD_name_buffer[87:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_word_buffer">
+         <obj_property name="ElementShortName">FD_word_buffer[7:0]</obj_property>
+         <obj_property name="ObjectShortName">FD_word_buffer[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_rw_mode">
+         <obj_property name="ElementShortName">FD_rw_mode</obj_property>
+         <obj_property name="ObjectShortName">FD_rw_mode</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_file_type">
+         <obj_property name="ElementShortName">FD_file_type</obj_property>
+         <obj_property name="ObjectShortName">FD_file_type</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/reserv_clust_i">
+         <obj_property name="ElementShortName">reserv_clust_i[21:0]</obj_property>
+         <obj_property name="ObjectShortName">reserv_clust_i[21:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/date_time_buff">
+         <obj_property name="ElementShortName">date_time_buff[39:0]</obj_property>
+         <obj_property name="ObjectShortName">date_time_buff[39:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_op_success">
+         <obj_property name="ElementShortName">FD_op_success</obj_property>
+         <obj_property name="ObjectShortName">FD_op_success</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/diff_sector">
+         <obj_property name="ElementShortName">diff_sector</obj_property>
+         <obj_property name="ObjectShortName">diff_sector</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_fragment">
+         <obj_property name="ElementShortName">FD_fragment</obj_property>
+         <obj_property name="ObjectShortName">FD_fragment</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_nb_frag">
+         <obj_property name="ElementShortName">FD_nb_frag</obj_property>
+         <obj_property name="ObjectShortName">FD_nb_frag</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_cant_list_all_frag">
+         <obj_property name="ElementShortName">FD_cant_list_all_frag</obj_property>
+         <obj_property name="ObjectShortName">FD_cant_list_all_frag</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_last_fragment">
+         <obj_property name="ElementShortName">FD_last_fragment</obj_property>
+         <obj_property name="ObjectShortName">FD_last_fragment</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_new_fragment">
+         <obj_property name="ElementShortName">FD_new_fragment</obj_property>
+         <obj_property name="ObjectShortName">FD_new_fragment</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_completed_fragment">
+         <obj_property name="ElementShortName">FD_completed_fragment</obj_property>
+         <obj_property name="ObjectShortName">FD_completed_fragment</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group1422">
+      <obj_property name="label">manage file</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/date_time_buff">
+         <obj_property name="ElementShortName">date_time_buff[39:0]</obj_property>
+         <obj_property name="ObjectShortName">date_time_buff[39:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_opened_i">
+         <obj_property name="ElementShortName">file_opened_i[0:0]</obj_property>
+         <obj_property name="ObjectShortName">file_opened_i[0:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_data_in">
+         <obj_property name="ElementShortName">file_data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">file_data_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_op_ack">
+         <obj_property name="ElementShortName">file_op_ack</obj_property>
+         <obj_property name="ObjectShortName">file_op_ack</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_debug_addr">
+         <obj_property name="ElementShortName">file_debug_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">file_debug_addr[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_debug_data">
+         <obj_property name="ElementShortName">file_debug_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">file_debug_data[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group257">
+      <obj_property name="label">write fragment</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_fsm">
+         <obj_property name="ElementShortName">frag_fsm</obj_property>
+         <obj_property name="ObjectShortName">frag_fsm</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_start_cluster">
+         <obj_property name="ElementShortName">frag_start_cluster[27:0]</obj_property>
+         <obj_property name="ObjectShortName">frag_start_cluster[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_size">
+         <obj_property name="ElementShortName">frag_size[21:0]</obj_property>
+         <obj_property name="ObjectShortName">frag_size[21:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_block_num">
+         <obj_property name="ElementShortName">frag_block_num[31:0]</obj_property>
+         <obj_property name="ObjectShortName">frag_block_num[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_buff_addr">
+         <obj_property name="ElementShortName">frag_buff_addr[8:0]</obj_property>
+         <obj_property name="ObjectShortName">frag_buff_addr[8:0]</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_bytes_cnt">
+         <obj_property name="ElementShortName">frag_bytes_cnt</obj_property>
+         <obj_property name="ObjectShortName">frag_bytes_cnt</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_cluster_nb">
+         <obj_property name="ElementShortName">frag_cluster_nb[27:0]</obj_property>
+         <obj_property name="ObjectShortName">frag_cluster_nb[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_next_cluster">
+         <obj_property name="ElementShortName">frag_next_cluster[31:0]</obj_property>
+         <obj_property name="ObjectShortName">frag_next_cluster[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_next_cluster_B">
+         <obj_property name="ElementShortName">frag_next_cluster_B[7:0]</obj_property>
+         <obj_property name="ObjectShortName">frag_next_cluster_B[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_out_of_sector">
+         <obj_property name="ElementShortName">frag_out_of_sector</obj_property>
+         <obj_property name="ObjectShortName">frag_out_of_sector</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group6267">
+      <obj_property name="label">file info update</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/info_fsm">
+         <obj_property name="ElementShortName">info_fsm</obj_property>
+         <obj_property name="ObjectShortName">info_fsm</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/info_sector_num">
+         <obj_property name="ElementShortName">info_sector_num[31:0]</obj_property>
+         <obj_property name="ObjectShortName">info_sector_num[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/info_addr">
+         <obj_property name="ElementShortName">info_addr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">info_addr[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/info_true_addr">
+         <obj_property name="ElementShortName">info_true_addr[8:0]</obj_property>
+         <obj_property name="ObjectShortName">info_true_addr[8:0]</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/info_bytes_cnt">
+         <obj_property name="ElementShortName">info_bytes_cnt</obj_property>
+         <obj_property name="ObjectShortName">info_bytes_cnt</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/info_buffer">
+         <obj_property name="ElementShortName">info_buffer[31:0]</obj_property>
+         <obj_property name="ObjectShortName">info_buffer[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/info_buffer_byte">
+         <obj_property name="ElementShortName">info_buffer_byte[7:0]</obj_property>
+         <obj_property name="ObjectShortName">info_buffer_byte[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_id_user">
+      <obj_property name="ElementShortName">file_id_user</obj_property>
+      <obj_property name="ObjectShortName">file_id_user</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_id_op">
+      <obj_property name="ElementShortName">file_id_op</obj_property>
+      <obj_property name="ObjectShortName">file_id_op</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_id_all">
+      <obj_property name="ElementShortName">file_id_all</obj_property>
+      <obj_property name="ObjectShortName">file_id_all</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group12364">
+      <obj_property name="label">SD manager</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_fsm">
+         <obj_property name="ElementShortName">SDm_fsm</obj_property>
+         <obj_property name="ObjectShortName">SDm_fsm</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_file_op_shift">
+         <obj_property name="ElementShortName">SDm_file_op_shift[0:0]</obj_property>
+         <obj_property name="ObjectShortName">SDm_file_op_shift[0:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_free_frag">
+         <obj_property name="ElementShortName">SDm_free_frag</obj_property>
+         <obj_property name="ObjectShortName">SDm_free_frag</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_file_op">
+         <obj_property name="ElementShortName">SDm_file_op</obj_property>
+         <obj_property name="ObjectShortName">SDm_file_op</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_file_id_op">
+         <obj_property name="ElementShortName">SDm_file_id_op</obj_property>
+         <obj_property name="ObjectShortName">SDm_file_id_op</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_write_op">
+         <obj_property name="ElementShortName">SDm_write_op</obj_property>
+         <obj_property name="ObjectShortName">SDm_write_op</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_sector_num">
+         <obj_property name="ElementShortName">SDm_sector_num[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SDm_sector_num[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_op_buff">
+         <obj_property name="ElementShortName">SDm_op_buff[2:0]</obj_property>
+         <obj_property name="ObjectShortName">SDm_op_buff[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_buff_addr">
+         <obj_property name="ElementShortName">SDm_buff_addr[8:0]</obj_property>
+         <obj_property name="ObjectShortName">SDm_buff_addr[8:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_last_byte_dly">
+         <obj_property name="ElementShortName">SDm_last_byte_dly</obj_property>
+         <obj_property name="ObjectShortName">SDm_last_byte_dly</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_bytes_cnt">
+         <obj_property name="ElementShortName">SDm_bytes_cnt</obj_property>
+         <obj_property name="ObjectShortName">SDm_bytes_cnt</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_data_read">
+         <obj_property name="ElementShortName">SDm_data_read[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SDm_data_read[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_data_write">
+         <obj_property name="ElementShortName">SDm_data_write[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SDm_data_write[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_op_fsm">
+         <obj_property name="ElementShortName">SD_op_fsm</obj_property>
+         <obj_property name="ObjectShortName">SD_op_fsm</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_op_done">
+         <obj_property name="ElementShortName">SD_op_done</obj_property>
+         <obj_property name="ObjectShortName">SD_op_done</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group24973">
+      <obj_property name="label">Files</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/file_fsm">
+         <obj_property name="ElementShortName">file_fsm</obj_property>
+         <obj_property name="ObjectShortName">file_fsm</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="group24990">
+         <obj_property name="label">module side - interface</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/read_write_out">
+            <obj_property name="ElementShortName">read_write_out</obj_property>
+            <obj_property name="ObjectShortName">read_write_out</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/reserve_clusters_out">
+            <obj_property name="ElementShortName">reserve_clusters_out[21:0]</obj_property>
+            <obj_property name="ObjectShortName">reserve_clusters_out[21:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/opened">
+            <obj_property name="ElementShortName">opened</obj_property>
+            <obj_property name="ObjectShortName">opened</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/size_in">
+            <obj_property name="ElementShortName">size_in[31:0]</obj_property>
+            <obj_property name="ObjectShortName">size_in[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/size">
+            <obj_property name="ElementShortName">size[31:0]</obj_property>
+            <obj_property name="ObjectShortName">size[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/open_file">
+            <obj_property name="ElementShortName">open_file</obj_property>
+            <obj_property name="ObjectShortName">open_file</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/close_file">
+            <obj_property name="ElementShortName">close_file</obj_property>
+            <obj_property name="ObjectShortName">close_file</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/format">
+            <obj_property name="ElementShortName">format</obj_property>
+            <obj_property name="ObjectShortName">format</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/data_in">
+            <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+            <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/data_out">
+            <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+            <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/enable_in">
+            <obj_property name="ElementShortName">enable_in</obj_property>
+            <obj_property name="ObjectShortName">enable_in</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/enable_out">
+            <obj_property name="ElementShortName">enable_out</obj_property>
+            <obj_property name="ObjectShortName">enable_out</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/sectors_per_cluster">
+            <obj_property name="ElementShortName">sectors_per_cluster[7:0]</obj_property>
+            <obj_property name="ObjectShortName">sectors_per_cluster[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/data_area_offset">
+            <obj_property name="ElementShortName">data_area_offset[31:0]</obj_property>
+            <obj_property name="ObjectShortName">data_area_offset[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_read">
+            <obj_property name="ElementShortName">fifo_read</obj_property>
+            <obj_property name="ObjectShortName">fifo_read</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_write">
+            <obj_property name="ElementShortName">fifo_write</obj_property>
+            <obj_property name="ObjectShortName">fifo_write</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_empty">
+            <obj_property name="ElementShortName">fifo_empty</obj_property>
+            <obj_property name="ObjectShortName">fifo_empty</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_full">
+            <obj_property name="ElementShortName">fifo_full</obj_property>
+            <obj_property name="ObjectShortName">fifo_full</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/sector_num">
+            <obj_property name="ElementShortName">sector_num[31:0]</obj_property>
+            <obj_property name="ObjectShortName">sector_num[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/request_op">
+            <obj_property name="ElementShortName">request_op</obj_property>
+            <obj_property name="ObjectShortName">request_op</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/request_clusters">
+            <obj_property name="ElementShortName">request_clusters</obj_property>
+            <obj_property name="ObjectShortName">request_clusters</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fragment_in">
+            <obj_property name="ElementShortName">fragment_in</obj_property>
+            <obj_property name="ObjectShortName">fragment_in</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/last_fragment">
+            <obj_property name="ElementShortName">last_fragment</obj_property>
+            <obj_property name="ObjectShortName">last_fragment</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/write_clusters_chain">
+            <obj_property name="ElementShortName">write_clusters_chain</obj_property>
+            <obj_property name="ObjectShortName">write_clusters_chain</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fragment_out">
+            <obj_property name="ElementShortName">fragment_out</obj_property>
+            <obj_property name="ObjectShortName">fragment_out</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/update_file_info">
+            <obj_property name="ElementShortName">update_file_info</obj_property>
+            <obj_property name="ObjectShortName">update_file_info</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/info_sector_num">
+            <obj_property name="ElementShortName">info_sector_num[31:0]</obj_property>
+            <obj_property name="ObjectShortName">info_sector_num[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/info_addr_offset_in">
+            <obj_property name="ElementShortName">info_addr_offset_in[3:0]</obj_property>
+            <obj_property name="ObjectShortName">info_addr_offset_in[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/info_addr_offset_out">
+            <obj_property name="ElementShortName">info_addr_offset_out[3:0]</obj_property>
+            <obj_property name="ObjectShortName">info_addr_offset_out[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/starting_cluster">
+            <obj_property name="ElementShortName">starting_cluster[27:0]</obj_property>
+            <obj_property name="ObjectShortName">starting_cluster[27:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/op_ack">
+            <obj_property name="ElementShortName">op_ack</obj_property>
+            <obj_property name="ObjectShortName">op_ack</obj_property>
+            <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/file_debug">
+            <obj_property name="ElementShortName">file_debug[7:0]</obj_property>
+            <obj_property name="ObjectShortName">file_debug[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/file_error">
+            <obj_property name="ElementShortName">file_error</obj_property>
+            <obj_property name="ObjectShortName">file_error</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/request_close">
+         <obj_property name="ElementShortName">request_close</obj_property>
+         <obj_property name="ObjectShortName">request_close</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/can_read">
+         <obj_property name="ElementShortName">can_read</obj_property>
+         <obj_property name="ObjectShortName">can_read</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fully_read">
+         <obj_property name="ElementShortName">fully_read</obj_property>
+         <obj_property name="ObjectShortName">fully_read</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/can_write">
+         <obj_property name="ElementShortName">can_write</obj_property>
+         <obj_property name="ObjectShortName">can_write</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/no_clusters_reserved">
+         <obj_property name="ElementShortName">no_clusters_reserved</obj_property>
+         <obj_property name="ObjectShortName">no_clusters_reserved</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/cluster_chain_done">
+         <obj_property name="ElementShortName">cluster_chain_done</obj_property>
+         <obj_property name="ObjectShortName">cluster_chain_done</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="group25545">
+         <obj_property name="label">fragments</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/frag">
+            <obj_property name="ElementShortName">frag[0:511]</obj_property>
+            <obj_property name="ObjectShortName">frag[0:511]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fragment_read">
+            <obj_property name="ElementShortName">fragment_read</obj_property>
+            <obj_property name="ObjectShortName">fragment_read</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fragment_write">
+            <obj_property name="ElementShortName">fragment_write</obj_property>
+            <obj_property name="ObjectShortName">fragment_write</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/frag_write_en">
+            <obj_property name="ElementShortName">frag_write_en</obj_property>
+            <obj_property name="ObjectShortName">frag_write_en</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/frag_ptr">
+            <obj_property name="ElementShortName">frag_ptr</obj_property>
+            <obj_property name="ObjectShortName">frag_ptr</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/nb_frag">
+            <obj_property name="ElementShortName">nb_frag</obj_property>
+            <obj_property name="ObjectShortName">nb_frag</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/last_fragment_dly">
+            <obj_property name="ElementShortName">last_fragment_dly</obj_property>
+            <obj_property name="ObjectShortName">last_fragment_dly</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/listing_cluster_done">
+            <obj_property name="ElementShortName">listing_cluster_done</obj_property>
+            <obj_property name="ObjectShortName">listing_cluster_done</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/cluster_list_complete">
+            <obj_property name="ElementShortName">cluster_list_complete</obj_property>
+            <obj_property name="ObjectShortName">cluster_list_complete</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/concatenate_frag">
+            <obj_property name="ElementShortName">concatenate_frag</obj_property>
+            <obj_property name="ObjectShortName">concatenate_frag</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group25032">
+         <obj_property name="label">sector managment</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/next_frag">
+            <obj_property name="ElementShortName">next_frag</obj_property>
+            <obj_property name="ObjectShortName">next_frag</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/waiting_new_sector">
+            <obj_property name="ElementShortName">waiting_new_sector</obj_property>
+            <obj_property name="ObjectShortName">waiting_new_sector</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/wait_new_fragment">
+            <obj_property name="ElementShortName">wait_new_fragment[2:0]</obj_property>
+            <obj_property name="ObjectShortName">wait_new_fragment[2:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/current_frag">
+            <obj_property name="ElementShortName">current_frag</obj_property>
+            <obj_property name="ObjectShortName">current_frag</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/start_cluster">
+            <obj_property name="ElementShortName">start_cluster[27:0]</obj_property>
+            <obj_property name="ObjectShortName">start_cluster[27:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/current_frag_size">
+            <obj_property name="ElementShortName">current_frag_size[21:0]</obj_property>
+            <obj_property name="ObjectShortName">current_frag_size[21:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/prev_frag_size">
+            <obj_property name="ElementShortName">prev_frag_size[21:0]</obj_property>
+            <obj_property name="ObjectShortName">prev_frag_size[21:0]</obj_property>
+            <obj_property name="CustomSignalColor">#808000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/sector_ready">
+            <obj_property name="ElementShortName">sector_ready</obj_property>
+            <obj_property name="ObjectShortName">sector_ready</obj_property>
+            <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/sector_num_i">
+            <obj_property name="ElementShortName">sector_num_i[31:0]</obj_property>
+            <obj_property name="ObjectShortName">sector_num_i[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/clust_in_frag_cnt">
+            <obj_property name="ElementShortName">clust_in_frag_cnt[21:0]</obj_property>
+            <obj_property name="ObjectShortName">clust_in_frag_cnt[21:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/sect_in_clust_cnt">
+            <obj_property name="ElementShortName">sect_in_clust_cnt[7:0]</obj_property>
+            <obj_property name="ObjectShortName">sect_in_clust_cnt[7:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group204">
+         <obj_property name="label">data</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/total_bytes_cnt">
+            <obj_property name="ElementShortName">total_bytes_cnt</obj_property>
+            <obj_property name="ObjectShortName">total_bytes_cnt</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_data_in">
+            <obj_property name="ElementShortName">fifo_data_in[7:0]</obj_property>
+            <obj_property name="ObjectShortName">fifo_data_in[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_dwrite">
+            <obj_property name="ElementShortName">fifo_dwrite</obj_property>
+            <obj_property name="ObjectShortName">fifo_dwrite</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_full_n">
+            <obj_property name="ElementShortName">fifo_full_n</obj_property>
+            <obj_property name="ObjectShortName">fifo_full_n</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_elemts">
+            <obj_property name="ElementShortName">fifo_elemts</obj_property>
+            <obj_property name="ObjectShortName">fifo_elemts</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_data_out">
+            <obj_property name="ElementShortName">fifo_data_out[7:0]</obj_property>
+            <obj_property name="ObjectShortName">fifo_data_out[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_dread">
+            <obj_property name="ElementShortName">fifo_dread</obj_property>
+            <obj_property name="ObjectShortName">fifo_dread</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_empty_n">
+            <obj_property name="ElementShortName">fifo_empty_n</obj_property>
+            <obj_property name="ObjectShortName">fifo_empty_n</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/data_fifo/read_index">
+            <obj_property name="ElementShortName">read_index</obj_property>
+            <obj_property name="ObjectShortName">read_index</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/data_fifo/write_index">
+            <obj_property name="ElementShortName">write_index</obj_property>
+            <obj_property name="ObjectShortName">write_index</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group194">
+         <obj_property name="label">file info</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/size">
+            <obj_property name="ElementShortName">size[31:0]</obj_property>
+            <obj_property name="ObjectShortName">size[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/size_i">
+            <obj_property name="ElementShortName">size_i[31:0]</obj_property>
+            <obj_property name="ObjectShortName">size_i[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/read_write_i">
+            <obj_property name="ElementShortName">read_write_i</obj_property>
+            <obj_property name="ObjectShortName">read_write_i</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group933">
+         <obj_property name="label">calc sector</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/calc_sector">
+            <obj_property name="ElementShortName">calc_sector</obj_property>
+            <obj_property name="ObjectShortName">calc_sector</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/calc_sector_bsy">
+            <obj_property name="ElementShortName">calc_sector_bsy</obj_property>
+            <obj_property name="ObjectShortName">calc_sector_bsy</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/rem_shifts">
+            <obj_property name="ElementShortName">rem_shifts[6:0]</obj_property>
+            <obj_property name="ObjectShortName">rem_shifts[6:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/buffer_to_shift">
+            <obj_property name="ElementShortName">buffer_to_shift[31:0]</obj_property>
+            <obj_property name="ObjectShortName">buffer_to_shift[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/block_num">
+            <obj_property name="ElementShortName">block_num[31:0]</obj_property>
+            <obj_property name="ObjectShortName">block_num[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/block_num_rdy">
+            <obj_property name="ElementShortName">block_num_rdy</obj_property>
+            <obj_property name="ObjectShortName">block_num_rdy</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group197">
+      <obj_property name="label">Directory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/tree_depth">
+         <obj_property name="ElementShortName">tree_depth</obj_property>
+         <obj_property name="ObjectShortName">tree_depth</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/tree_depth_full">
+         <obj_property name="ElementShortName">tree_depth_full</obj_property>
+         <obj_property name="ObjectShortName">tree_depth_full</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/tree_structure_cluster">
+         <obj_property name="ElementShortName">tree_structure_cluster[0:3][27:0]</obj_property>
+         <obj_property name="ObjectShortName">tree_structure_cluster[0:3][27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/tree_structure">
+         <obj_property name="ElementShortName">tree_structure[0:3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">tree_structure[0:3][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group207">
+      <obj_property name="label">cluster =&gt; sector</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/calc_sector">
+         <obj_property name="ElementShortName">calc_sector</obj_property>
+         <obj_property name="ObjectShortName">calc_sector</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/rem_shifts">
+         <obj_property name="ElementShortName">rem_shifts[6:0]</obj_property>
+         <obj_property name="ObjectShortName">rem_shifts[6:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/buffer_to_shift">
+         <obj_property name="ElementShortName">buffer_to_shift[31:0]</obj_property>
+         <obj_property name="ObjectShortName">buffer_to_shift[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/sector_in_clust">
+         <obj_property name="ElementShortName">sector_in_clust[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sector_in_clust[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/block_num">
+         <obj_property name="ElementShortName">block_num[31:0]</obj_property>
+         <obj_property name="ObjectShortName">block_num[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/block_num_rdy">
+         <obj_property name="ElementShortName">block_num_rdy</obj_property>
+         <obj_property name="ObjectShortName">block_num_rdy</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/calc_sector_bsy">
+         <obj_property name="ElementShortName">calc_sector_bsy</obj_property>
+         <obj_property name="ObjectShortName">calc_sector_bsy</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/mux_out_cluster">
+         <obj_property name="ElementShortName">mux_out_cluster[27:0]</obj_property>
+         <obj_property name="ObjectShortName">mux_out_cluster[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/prev_cluster">
+         <obj_property name="ElementShortName">prev_cluster[27:0]</obj_property>
+         <obj_property name="ObjectShortName">prev_cluster[27:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/recopy_FAT_fsm">
+      <obj_property name="ElementShortName">recopy_FAT_fsm</obj_property>
+      <obj_property name="ObjectShortName">recopy_FAT_fsm</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_SDcard_FAT32/IMAGE_DIRNAME">
+      <obj_property name="ElementShortName">IMAGE_DIRNAME[1:29]</obj_property>
+      <obj_property name="ObjectShortName">IMAGE_DIRNAME[1:29]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_SDcard_FAT32/FILE_TO_ANALYSE">
+      <obj_property name="ElementShortName">FILE_TO_ANALYSE[1:11]</obj_property>
+      <obj_property name="ObjectShortName">FILE_TO_ANALYSE[1:11]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_SDcard_FAT32/FILE_ANALYSED">
+      <obj_property name="ElementShortName">FILE_ANALYSED[1:30]</obj_property>
+      <obj_property name="ObjectShortName">FILE_ANALYSED[1:30]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_SDcard_FAT32/RW_MODE">
+      <obj_property name="ElementShortName">RW_MODE</obj_property>
+      <obj_property name="ObjectShortName">RW_MODE</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_SDcard_FAT32/NB_DATA_TO_OP">
+      <obj_property name="ElementShortName">NB_DATA_TO_OP</obj_property>
+      <obj_property name="ObjectShortName">NB_DATA_TO_OP</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_SDcard_FAT32/rdg_rdy">
+      <obj_property name="ElementShortName">rdg_rdy</obj_property>
+      <obj_property name="ObjectShortName">rdg_rdy</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_SDcard_FAT32/nb_data_written">
+      <obj_property name="ElementShortName">nb_data_written</obj_property>
+      <obj_property name="ObjectShortName">nb_data_written</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group32497">
+      <obj_property name="label">why_simulation_is_so_loooooong</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group32496">
+         <obj_property name="label">main</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/filename">
+            <obj_property name="ElementShortName">filename[87:0]</obj_property>
+            <obj_property name="ObjectShortName">filename[87:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/date_time">
+            <obj_property name="ElementShortName">date_time[39:0]</obj_property>
+            <obj_property name="ObjectShortName">date_time[39:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_id">
+            <obj_property name="ElementShortName">file_id[0:0]</obj_property>
+            <obj_property name="ObjectShortName">file_id[0:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/read_write">
+            <obj_property name="ElementShortName">read_write</obj_property>
+            <obj_property name="ObjectShortName">read_write</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/open_file">
+            <obj_property name="ElementShortName">open_file</obj_property>
+            <obj_property name="ObjectShortName">open_file</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_opened">
+            <obj_property name="ElementShortName">file_opened[0:0]</obj_property>
+            <obj_property name="ObjectShortName">file_opened[0:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_size">
+            <obj_property name="ElementShortName">file_size[31:0]</obj_property>
+            <obj_property name="ObjectShortName">file_size[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/reserv_clust">
+            <obj_property name="ElementShortName">reserv_clust[21:0]</obj_property>
+            <obj_property name="ObjectShortName">reserv_clust[21:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/close_file">
+            <obj_property name="ElementShortName">close_file</obj_property>
+            <obj_property name="ObjectShortName">close_file</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/open_dir">
+            <obj_property name="ElementShortName">open_dir</obj_property>
+            <obj_property name="ObjectShortName">open_dir</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/close_dir">
+            <obj_property name="ElementShortName">close_dir</obj_property>
+            <obj_property name="ObjectShortName">close_dir</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/format">
+            <obj_property name="ElementShortName">format</obj_property>
+            <obj_property name="ObjectShortName">format</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/eject_card">
+            <obj_property name="ElementShortName">eject_card</obj_property>
+            <obj_property name="ObjectShortName">eject_card</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/busy">
+            <obj_property name="ElementShortName">busy</obj_property>
+            <obj_property name="ObjectShortName">busy</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_memory">
+            <obj_property name="ElementShortName">free_memory</obj_property>
+            <obj_property name="ObjectShortName">free_memory</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/fat_info">
+            <obj_property name="ElementShortName">fat_info[7:0]</obj_property>
+            <obj_property name="ObjectShortName">fat_info[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/fat_new_info">
+            <obj_property name="ElementShortName">fat_new_info</obj_property>
+            <obj_property name="ObjectShortName">fat_new_info</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/debug">
+            <obj_property name="ElementShortName">debug[7:0]</obj_property>
+            <obj_property name="ObjectShortName">debug[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/fat_error">
+            <obj_property name="ElementShortName">fat_error</obj_property>
+            <obj_property name="ObjectShortName">fat_error</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/data_in">
+            <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+            <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/data_out">
+            <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+            <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/enable_in">
+            <obj_property name="ElementShortName">enable_in[0:0]</obj_property>
+            <obj_property name="ObjectShortName">enable_in[0:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/enable_out">
+            <obj_property name="ElementShortName">enable_out[0:0]</obj_property>
+            <obj_property name="ObjectShortName">enable_out[0:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/debug_addr">
+            <obj_property name="ElementShortName">debug_addr[15:0]</obj_property>
+            <obj_property name="ObjectShortName">debug_addr[15:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/debug_data">
+            <obj_property name="ElementShortName">debug_data[31:0]</obj_property>
+            <obj_property name="ObjectShortName">debug_data[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_DAT">
+            <obj_property name="ElementShortName">SD_DAT[3:0]</obj_property>
+            <obj_property name="ObjectShortName">SD_DAT[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_CD">
+            <obj_property name="ElementShortName">SD_CD</obj_property>
+            <obj_property name="ObjectShortName">SD_CD</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_WP">
+            <obj_property name="ElementShortName">SD_WP</obj_property>
+            <obj_property name="ObjectShortName">SD_WP</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_CLK">
+            <obj_property name="ElementShortName">SD_CLK</obj_property>
+            <obj_property name="ObjectShortName">SD_CLK</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_CMD">
+            <obj_property name="ElementShortName">SD_CMD</obj_property>
+            <obj_property name="ObjectShortName">SD_CMD</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_state">
+            <obj_property name="ElementShortName">SD_state[31:0]</obj_property>
+            <obj_property name="ObjectShortName">SD_state[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/module_state">
+            <obj_property name="ElementShortName">module_state[31:0]</obj_property>
+            <obj_property name="ObjectShortName">module_state[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/BR_state">
+            <obj_property name="ElementShortName">BR_state[31:0]</obj_property>
+            <obj_property name="ObjectShortName">BR_state[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/BR_state_err">
+            <obj_property name="ElementShortName">BR_state_err[31:0]</obj_property>
+            <obj_property name="ObjectShortName">BR_state_err[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_state">
+            <obj_property name="ElementShortName">FAT_state[31:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_state[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_block_num">
+            <obj_property name="ElementShortName">SD_block_num[31:0]</obj_property>
+            <obj_property name="ObjectShortName">SD_block_num[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_op_buff">
+            <obj_property name="ElementShortName">SD_op_buff[2:0]</obj_property>
+            <obj_property name="ObjectShortName">SD_op_buff[2:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_read_blk">
+            <obj_property name="ElementShortName">SD_read_blk</obj_property>
+            <obj_property name="ObjectShortName">SD_read_blk</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_write_blk">
+            <obj_property name="ElementShortName">SD_write_blk</obj_property>
+            <obj_property name="ObjectShortName">SD_write_blk</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_erase_blk">
+            <obj_property name="ElementShortName">SD_erase_blk</obj_property>
+            <obj_property name="ObjectShortName">SD_erase_blk</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_multiple">
+            <obj_property name="ElementShortName">SD_multiple</obj_property>
+            <obj_property name="ObjectShortName">SD_multiple</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_busy">
+            <obj_property name="ElementShortName">SD_busy</obj_property>
+            <obj_property name="ObjectShortName">SD_busy</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_err_code">
+            <obj_property name="ElementShortName">SD_err_code[3:0]</obj_property>
+            <obj_property name="ObjectShortName">SD_err_code[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_nb_blocks">
+            <obj_property name="ElementShortName">SD_nb_blocks[31:0]</obj_property>
+            <obj_property name="ObjectShortName">SD_nb_blocks[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_buffer">
+            <obj_property name="ElementShortName">SD_buffer[2:0]</obj_property>
+            <obj_property name="ObjectShortName">SD_buffer[2:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_address">
+            <obj_property name="ElementShortName">SD_address[8:0]</obj_property>
+            <obj_property name="ObjectShortName">SD_address[8:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_write">
+            <obj_property name="ElementShortName">SD_write</obj_property>
+            <obj_property name="ObjectShortName">SD_write</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_data_in">
+            <obj_property name="ElementShortName">SD_data_in[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SD_data_in[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_data_out">
+            <obj_property name="ElementShortName">SD_data_out[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SD_data_out[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/synced_CD">
+            <obj_property name="ElementShortName">synced_CD</obj_property>
+            <obj_property name="ObjectShortName">synced_CD</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/synced_WP">
+            <obj_property name="ElementShortName">synced_WP</obj_property>
+            <obj_property name="ObjectShortName">synced_WP</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDcard_reset">
+            <obj_property name="ElementShortName">SDcard_reset</obj_property>
+            <obj_property name="ObjectShortName">SDcard_reset</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/module_fsm">
+            <obj_property name="ElementShortName">module_fsm</obj_property>
+            <obj_property name="ObjectShortName">module_fsm</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/read_blk">
+            <obj_property name="ElementShortName">read_blk</obj_property>
+            <obj_property name="ObjectShortName">read_blk</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/write_blk">
+            <obj_property name="ElementShortName">write_blk</obj_property>
+            <obj_property name="ObjectShortName">write_blk</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/erase_blk">
+            <obj_property name="ElementShortName">erase_blk</obj_property>
+            <obj_property name="ObjectShortName">erase_blk</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/format_en">
+            <obj_property name="ElementShortName">format_en</obj_property>
+            <obj_property name="ObjectShortName">format_en</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/formating_done">
+            <obj_property name="ElementShortName">formating_done</obj_property>
+            <obj_property name="ObjectShortName">formating_done</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/erase_file_ok">
+            <obj_property name="ElementShortName">erase_file_ok</obj_property>
+            <obj_property name="ObjectShortName">erase_file_ok</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/BR_fsm">
+            <obj_property name="ElementShortName">BR_fsm</obj_property>
+            <obj_property name="ObjectShortName">BR_fsm</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/BR_error">
+            <obj_property name="ElementShortName">BR_error</obj_property>
+            <obj_property name="ObjectShortName">BR_error</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/BR_bytes_cnt">
+            <obj_property name="ElementShortName">BR_bytes_cnt</obj_property>
+            <obj_property name="ObjectShortName">BR_bytes_cnt</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_fsm">
+            <obj_property name="ElementShortName">FAT_fsm</obj_property>
+            <obj_property name="ObjectShortName">FAT_fsm</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_block_num">
+            <obj_property name="ElementShortName">FAT_block_num[31:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_block_num[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_block_num_1">
+            <obj_property name="ElementShortName">FAT_block_num_1[31:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_block_num_1[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_block_num_k">
+            <obj_property name="ElementShortName">FAT_block_num_k[31:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_block_num_k[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_op_buff">
+            <obj_property name="ElementShortName">FAT_op_buff[2:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_op_buff[2:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_loc_buffer">
+            <obj_property name="ElementShortName">FAT_loc_buffer[2:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_loc_buffer[2:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_address">
+            <obj_property name="ElementShortName">FAT_address[8:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_address[8:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_multiple">
+            <obj_property name="ElementShortName">FAT_multiple</obj_property>
+            <obj_property name="ObjectShortName">FAT_multiple</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_check_last_addr">
+            <obj_property name="ElementShortName">FAT_check_last_addr</obj_property>
+            <obj_property name="ObjectShortName">FAT_check_last_addr</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_nb_fat_check">
+            <obj_property name="ElementShortName">FAT_nb_fat_check[7:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_nb_fat_check[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_check_sector_done">
+            <obj_property name="ElementShortName">FAT_check_sector_done</obj_property>
+            <obj_property name="ObjectShortName">FAT_check_sector_done</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_all_sectors_read">
+            <obj_property name="ElementShortName">FAT_all_sectors_read</obj_property>
+            <obj_property name="ObjectShortName">FAT_all_sectors_read</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_difference">
+            <obj_property name="ElementShortName">FAT_difference</obj_property>
+            <obj_property name="ObjectShortName">FAT_difference</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_read_buffer">
+            <obj_property name="ElementShortName">FAT_read_buffer</obj_property>
+            <obj_property name="ObjectShortName">FAT_read_buffer</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_1_buffer">
+            <obj_property name="ElementShortName">FAT_1_buffer[7:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_1_buffer[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_nb_correct">
+            <obj_property name="ElementShortName">FAT_nb_correct</obj_property>
+            <obj_property name="ObjectShortName">FAT_nb_correct</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_nb_diff">
+            <obj_property name="ElementShortName">FAT_nb_diff</obj_property>
+            <obj_property name="ObjectShortName">FAT_nb_diff</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_frag_table">
+            <obj_property name="ElementShortName">free_frag_table[0:511][55:0]</obj_property>
+            <obj_property name="ObjectShortName">free_frag_table[0:511][55:0]</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_frag_read_ptr">
+            <obj_property name="ElementShortName">free_frag_read_ptr</obj_property>
+            <obj_property name="ObjectShortName">free_frag_read_ptr</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_frag_write_ptr">
+            <obj_property name="ElementShortName">free_frag_write_ptr</obj_property>
+            <obj_property name="ObjectShortName">free_frag_write_ptr</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_frag_write_en">
+            <obj_property name="ElementShortName">free_frag_write_en</obj_property>
+            <obj_property name="ObjectShortName">free_frag_write_en</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_frag_table_size">
+            <obj_property name="ElementShortName">free_frag_table_size</obj_property>
+            <obj_property name="ObjectShortName">free_frag_table_size</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_frag_table_full">
+            <obj_property name="ElementShortName">free_frag_table_full</obj_property>
+            <obj_property name="ObjectShortName">free_frag_table_full</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_frag_write_dly">
+            <obj_property name="ElementShortName">free_frag_write_dly</obj_property>
+            <obj_property name="ObjectShortName">free_frag_write_dly</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_frag_read">
+            <obj_property name="ElementShortName">free_frag_read[55:0]</obj_property>
+            <obj_property name="ObjectShortName">free_frag_read[55:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_frag_to_write">
+            <obj_property name="ElementShortName">free_frag_to_write[55:0]</obj_property>
+            <obj_property name="ObjectShortName">free_frag_to_write[55:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/store_new_fragment">
+            <obj_property name="ElementShortName">store_new_fragment</obj_property>
+            <obj_property name="ObjectShortName">store_new_fragment</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/fragment_ordering">
+            <obj_property name="ElementShortName">fragment_ordering</obj_property>
+            <obj_property name="ObjectShortName">fragment_ordering</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/new_free_frag">
+            <obj_property name="ElementShortName">new_free_frag[55:0]</obj_property>
+            <obj_property name="ObjectShortName">new_free_frag[55:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/new_free_frag_inserted">
+            <obj_property name="ElementShortName">new_free_frag_inserted</obj_property>
+            <obj_property name="ObjectShortName">new_free_frag_inserted</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_free_clusters_start">
+            <obj_property name="ElementShortName">FAT_free_clusters_start[27:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_free_clusters_start[27:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_free_clusters_cnt">
+            <obj_property name="ElementShortName">FAT_free_clusters_cnt[27:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_free_clusters_cnt[27:0]</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_nb_free_clusters">
+            <obj_property name="ElementShortName">FAT_nb_free_clusters</obj_property>
+            <obj_property name="ObjectShortName">FAT_nb_free_clusters</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_chain_to_store">
+            <obj_property name="ElementShortName">FAT_chain_to_store[55:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_chain_to_store[55:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_new_chain_to_store">
+            <obj_property name="ElementShortName">FAT_new_chain_to_store</obj_property>
+            <obj_property name="ObjectShortName">FAT_new_chain_to_store</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_store_last_chain">
+            <obj_property name="ElementShortName">FAT_store_last_chain</obj_property>
+            <obj_property name="ObjectShortName">FAT_store_last_chain</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_cluster">
+            <obj_property name="ElementShortName">FAT_cluster[31:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_cluster[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_bytes_cnt">
+            <obj_property name="ElementShortName">FAT_bytes_cnt</obj_property>
+            <obj_property name="ObjectShortName">FAT_bytes_cnt</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_cluster_cnt">
+            <obj_property name="ElementShortName">FAT_cluster_cnt[27:0]</obj_property>
+            <obj_property name="ObjectShortName">FAT_cluster_cnt[27:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_cluster_cnt_dly">
+            <obj_property name="ElementShortName">FAT_cluster_cnt_dly</obj_property>
+            <obj_property name="ObjectShortName">FAT_cluster_cnt_dly</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FAT_new_cluster">
+            <obj_property name="ElementShortName">FAT_new_cluster</obj_property>
+            <obj_property name="ObjectShortName">FAT_new_cluster</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/current_frag_cluster">
+            <obj_property name="ElementShortName">current_frag_cluster[27:0]</obj_property>
+            <obj_property name="ObjectShortName">current_frag_cluster[27:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/current_frag_size">
+            <obj_property name="ElementShortName">current_frag_size[27:0]</obj_property>
+            <obj_property name="ObjectShortName">current_frag_size[27:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/request_frag">
+            <obj_property name="ElementShortName">request_frag</obj_property>
+            <obj_property name="ObjectShortName">request_frag</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/request_frag_size">
+            <obj_property name="ElementShortName">request_frag_size[21:0]</obj_property>
+            <obj_property name="ObjectShortName">request_frag_size[21:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_out">
+            <obj_property name="ElementShortName">frag_out</obj_property>
+            <obj_property name="ObjectShortName">frag_out</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_fsm">
+            <obj_property name="ElementShortName">frag_fsm</obj_property>
+            <obj_property name="ObjectShortName">frag_fsm</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_start_cluster">
+            <obj_property name="ElementShortName">frag_start_cluster[27:0]</obj_property>
+            <obj_property name="ObjectShortName">frag_start_cluster[27:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_size">
+            <obj_property name="ElementShortName">frag_size[21:0]</obj_property>
+            <obj_property name="ObjectShortName">frag_size[21:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_block_num">
+            <obj_property name="ElementShortName">frag_block_num[31:0]</obj_property>
+            <obj_property name="ObjectShortName">frag_block_num[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_buff_addr">
+            <obj_property name="ElementShortName">frag_buff_addr[8:0]</obj_property>
+            <obj_property name="ObjectShortName">frag_buff_addr[8:0]</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_bytes_cnt">
+            <obj_property name="ElementShortName">frag_bytes_cnt</obj_property>
+            <obj_property name="ObjectShortName">frag_bytes_cnt</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_cluster_nb">
+            <obj_property name="ElementShortName">frag_cluster_nb[27:0]</obj_property>
+            <obj_property name="ObjectShortName">frag_cluster_nb[27:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_next_cluster">
+            <obj_property name="ElementShortName">frag_next_cluster[31:0]</obj_property>
+            <obj_property name="ObjectShortName">frag_next_cluster[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_next_cluster_B">
+            <obj_property name="ElementShortName">frag_next_cluster_B[7:0]</obj_property>
+            <obj_property name="ObjectShortName">frag_next_cluster_B[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_out_of_sector">
+            <obj_property name="ElementShortName">frag_out_of_sector</obj_property>
+            <obj_property name="ObjectShortName">frag_out_of_sector</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_is_the_first">
+            <obj_property name="ElementShortName">frag_is_the_first</obj_property>
+            <obj_property name="ObjectShortName">frag_is_the_first</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/frag_is_first_dly">
+            <obj_property name="ElementShortName">frag_is_first_dly</obj_property>
+            <obj_property name="ObjectShortName">frag_is_first_dly</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/check_fd_fsm">
+            <obj_property name="ElementShortName">check_fd_fsm</obj_property>
+            <obj_property name="ObjectShortName">check_fd_fsm</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_fd_found">
+            <obj_property name="ElementShortName">free_fd_found</obj_property>
+            <obj_property name="ObjectShortName">free_fd_found</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_fd_sector">
+            <obj_property name="ElementShortName">free_fd_sector[31:0]</obj_property>
+            <obj_property name="ObjectShortName">free_fd_sector[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/free_fd_address">
+            <obj_property name="ElementShortName">free_fd_address[3:0]</obj_property>
+            <obj_property name="ObjectShortName">free_fd_address[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_data">
+            <obj_property name="ElementShortName">FD_data[7:0]</obj_property>
+            <obj_property name="ObjectShortName">FD_data[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_data_buffer">
+            <obj_property name="ElementShortName">FD_data_buffer[79:0]</obj_property>
+            <obj_property name="ObjectShortName">FD_data_buffer[79:0]</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_bytes_cnt">
+            <obj_property name="ElementShortName">FD_bytes_cnt</obj_property>
+            <obj_property name="ObjectShortName">FD_bytes_cnt</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_loc_buffer">
+            <obj_property name="ElementShortName">FD_loc_buffer[2:0]</obj_property>
+            <obj_property name="ObjectShortName">FD_loc_buffer[2:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_intern_addr">
+            <obj_property name="ElementShortName">FD_intern_addr[4:0]</obj_property>
+            <obj_property name="ObjectShortName">FD_intern_addr[4:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_fd_addr">
+            <obj_property name="ElementShortName">FD_fd_addr[3:0]</obj_property>
+            <obj_property name="ObjectShortName">FD_fd_addr[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_buff_addr">
+            <obj_property name="ElementShortName">FD_buff_addr[8:0]</obj_property>
+            <obj_property name="ObjectShortName">FD_buff_addr[8:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_block_num">
+            <obj_property name="ElementShortName">FD_block_num[31:0]</obj_property>
+            <obj_property name="ObjectShortName">FD_block_num[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_sector_in_clust">
+            <obj_property name="ElementShortName">FD_sector_in_clust[7:0]</obj_property>
+            <obj_property name="ObjectShortName">FD_sector_in_clust[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_current_cluster">
+            <obj_property name="ElementShortName">FD_current_cluster[27:0]</obj_property>
+            <obj_property name="ObjectShortName">FD_current_cluster[27:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_next_cluster">
+            <obj_property name="ElementShortName">FD_next_cluster[27:0]</obj_property>
+            <obj_property name="ObjectShortName">FD_next_cluster[27:0]</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_name_diff">
+            <obj_property name="ElementShortName">FD_name_diff</obj_property>
+            <obj_property name="ObjectShortName">FD_name_diff</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_name">
+            <obj_property name="ElementShortName">FD_name[87:0]</obj_property>
+            <obj_property name="ObjectShortName">FD_name[87:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_name_buffer">
+            <obj_property name="ElementShortName">FD_name_buffer[87:0]</obj_property>
+            <obj_property name="ObjectShortName">FD_name_buffer[87:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_word_buffer">
+            <obj_property name="ElementShortName">FD_word_buffer[7:0]</obj_property>
+            <obj_property name="ObjectShortName">FD_word_buffer[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_rw_mode">
+            <obj_property name="ElementShortName">FD_rw_mode</obj_property>
+            <obj_property name="ObjectShortName">FD_rw_mode</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_file_type">
+            <obj_property name="ElementShortName">FD_file_type</obj_property>
+            <obj_property name="ObjectShortName">FD_file_type</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/reserv_clust_i">
+            <obj_property name="ElementShortName">reserv_clust_i[21:0]</obj_property>
+            <obj_property name="ObjectShortName">reserv_clust_i[21:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/date_time_buff">
+            <obj_property name="ElementShortName">date_time_buff[39:0]</obj_property>
+            <obj_property name="ObjectShortName">date_time_buff[39:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/diff_sector">
+            <obj_property name="ElementShortName">diff_sector</obj_property>
+            <obj_property name="ObjectShortName">diff_sector</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_op_success">
+            <obj_property name="ElementShortName">FD_op_success</obj_property>
+            <obj_property name="ObjectShortName">FD_op_success</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_fragment">
+            <obj_property name="ElementShortName">FD_fragment</obj_property>
+            <obj_property name="ObjectShortName">FD_fragment</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_nb_frag">
+            <obj_property name="ElementShortName">FD_nb_frag</obj_property>
+            <obj_property name="ObjectShortName">FD_nb_frag</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_cant_list_all_frag">
+            <obj_property name="ElementShortName">FD_cant_list_all_frag</obj_property>
+            <obj_property name="ObjectShortName">FD_cant_list_all_frag</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_last_fragment">
+            <obj_property name="ElementShortName">FD_last_fragment</obj_property>
+            <obj_property name="ObjectShortName">FD_last_fragment</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_new_fragment">
+            <obj_property name="ElementShortName">FD_new_fragment</obj_property>
+            <obj_property name="ObjectShortName">FD_new_fragment</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/FD_completed_fragment">
+            <obj_property name="ElementShortName">FD_completed_fragment</obj_property>
+            <obj_property name="ObjectShortName">FD_completed_fragment</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/info_fsm">
+            <obj_property name="ElementShortName">info_fsm</obj_property>
+            <obj_property name="ObjectShortName">info_fsm</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/info_sector_num">
+            <obj_property name="ElementShortName">info_sector_num[31:0]</obj_property>
+            <obj_property name="ObjectShortName">info_sector_num[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/info_addr">
+            <obj_property name="ElementShortName">info_addr[3:0]</obj_property>
+            <obj_property name="ObjectShortName">info_addr[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/info_true_addr">
+            <obj_property name="ElementShortName">info_true_addr[8:0]</obj_property>
+            <obj_property name="ObjectShortName">info_true_addr[8:0]</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/info_bytes_cnt">
+            <obj_property name="ElementShortName">info_bytes_cnt</obj_property>
+            <obj_property name="ObjectShortName">info_bytes_cnt</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/info_buffer">
+            <obj_property name="ElementShortName">info_buffer[31:0]</obj_property>
+            <obj_property name="ObjectShortName">info_buffer[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/info_buffer_byte">
+            <obj_property name="ElementShortName">info_buffer_byte[7:0]</obj_property>
+            <obj_property name="ObjectShortName">info_buffer_byte[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/tree_structure">
+            <obj_property name="ElementShortName">tree_structure[0:3][31:0]</obj_property>
+            <obj_property name="ObjectShortName">tree_structure[0:3][31:0]</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/tree_depth">
+            <obj_property name="ElementShortName">tree_depth</obj_property>
+            <obj_property name="ObjectShortName">tree_depth</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/calc_sector">
+            <obj_property name="ElementShortName">calc_sector</obj_property>
+            <obj_property name="ObjectShortName">calc_sector</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/rem_shifts">
+            <obj_property name="ElementShortName">rem_shifts[6:0]</obj_property>
+            <obj_property name="ObjectShortName">rem_shifts[6:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/buffer_to_shift">
+            <obj_property name="ElementShortName">buffer_to_shift[31:0]</obj_property>
+            <obj_property name="ObjectShortName">buffer_to_shift[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/sector_in_clust">
+            <obj_property name="ElementShortName">sector_in_clust[7:0]</obj_property>
+            <obj_property name="ObjectShortName">sector_in_clust[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/block_num">
+            <obj_property name="ElementShortName">block_num[31:0]</obj_property>
+            <obj_property name="ObjectShortName">block_num[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/block_num_rdy">
+            <obj_property name="ElementShortName">block_num_rdy</obj_property>
+            <obj_property name="ObjectShortName">block_num_rdy</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/calc_sector_bsy">
+            <obj_property name="ElementShortName">calc_sector_bsy</obj_property>
+            <obj_property name="ObjectShortName">calc_sector_bsy</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/mux_out_cluster">
+            <obj_property name="ElementShortName">mux_out_cluster[27:0]</obj_property>
+            <obj_property name="ObjectShortName">mux_out_cluster[27:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/prev_cluster">
+            <obj_property name="ElementShortName">prev_cluster[27:0]</obj_property>
+            <obj_property name="ObjectShortName">prev_cluster[27:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_in">
+            <obj_property name="ElementShortName">file_in[0:0]</obj_property>
+            <obj_property name="ObjectShortName">file_in[0:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_out">
+            <obj_property name="ElementShortName">file_out[0:0]</obj_property>
+            <obj_property name="ObjectShortName">file_out[0:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_opened_i">
+            <obj_property name="ElementShortName">file_opened_i[0:0]</obj_property>
+            <obj_property name="ObjectShortName">file_opened_i[0:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/rw_mode_i">
+            <obj_property name="ElementShortName">rw_mode_i[0:0]</obj_property>
+            <obj_property name="ObjectShortName">rw_mode_i[0:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_size_i">
+            <obj_property name="ElementShortName">file_size_i[31:0]</obj_property>
+            <obj_property name="ObjectShortName">file_size_i[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_debug_addr">
+            <obj_property name="ElementShortName">file_debug_addr[15:0]</obj_property>
+            <obj_property name="ObjectShortName">file_debug_addr[15:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_debug_data">
+            <obj_property name="ElementShortName">file_debug_data[31:0]</obj_property>
+            <obj_property name="ObjectShortName">file_debug_data[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_last_fragment">
+            <obj_property name="ElementShortName">file_last_fragment</obj_property>
+            <obj_property name="ObjectShortName">file_last_fragment</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_data_in">
+            <obj_property name="ElementShortName">file_data_in[7:0]</obj_property>
+            <obj_property name="ObjectShortName">file_data_in[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_op_ack">
+            <obj_property name="ElementShortName">file_op_ack</obj_property>
+            <obj_property name="ObjectShortName">file_op_ack</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_info_sector_num">
+            <obj_property name="ElementShortName">file_info_sector_num[31:0]</obj_property>
+            <obj_property name="ObjectShortName">file_info_sector_num[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_info_addr_offset_in">
+            <obj_property name="ElementShortName">file_info_addr_offset_in[3:0]</obj_property>
+            <obj_property name="ObjectShortName">file_info_addr_offset_in[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_fragment_in">
+            <obj_property name="ElementShortName">file_fragment_in</obj_property>
+            <obj_property name="ObjectShortName">file_fragment_in</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_fifo_read">
+            <obj_property name="ElementShortName">file_fifo_read</obj_property>
+            <obj_property name="ObjectShortName">file_fifo_read</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_fifo_write">
+            <obj_property name="ElementShortName">file_fifo_write</obj_property>
+            <obj_property name="ObjectShortName">file_fifo_write</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_fsm">
+            <obj_property name="ElementShortName">SDm_fsm</obj_property>
+            <obj_property name="ObjectShortName">SDm_fsm</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_fetch_buff">
+            <obj_property name="ElementShortName">SDm_fetch_buff[2:0]</obj_property>
+            <obj_property name="ObjectShortName">SDm_fetch_buff[2:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_file_op">
+            <obj_property name="ElementShortName">SDm_file_op</obj_property>
+            <obj_property name="ObjectShortName">SDm_file_op</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_file_id_op">
+            <obj_property name="ElementShortName">SDm_file_id_op</obj_property>
+            <obj_property name="ObjectShortName">SDm_file_id_op</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_write_op">
+            <obj_property name="ElementShortName">SDm_write_op</obj_property>
+            <obj_property name="ObjectShortName">SDm_write_op</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_sector_num">
+            <obj_property name="ElementShortName">SDm_sector_num[31:0]</obj_property>
+            <obj_property name="ObjectShortName">SDm_sector_num[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_op_buff">
+            <obj_property name="ElementShortName">SDm_op_buff[2:0]</obj_property>
+            <obj_property name="ObjectShortName">SDm_op_buff[2:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_buff_addr">
+            <obj_property name="ElementShortName">SDm_buff_addr[8:0]</obj_property>
+            <obj_property name="ObjectShortName">SDm_buff_addr[8:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_last_byte_dly">
+            <obj_property name="ElementShortName">SDm_last_byte_dly</obj_property>
+            <obj_property name="ObjectShortName">SDm_last_byte_dly</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_bytes_cnt">
+            <obj_property name="ElementShortName">SDm_bytes_cnt</obj_property>
+            <obj_property name="ObjectShortName">SDm_bytes_cnt</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_data_read">
+            <obj_property name="ElementShortName">SDm_data_read[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SDm_data_read[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SDm_data_write">
+            <obj_property name="ElementShortName">SDm_data_write[7:0]</obj_property>
+            <obj_property name="ObjectShortName">SDm_data_write[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_op_fsm">
+            <obj_property name="ElementShortName">SD_op_fsm</obj_property>
+            <obj_property name="ObjectShortName">SD_op_fsm</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/SD_op_done">
+            <obj_property name="ElementShortName">SD_op_done</obj_property>
+            <obj_property name="ObjectShortName">SD_op_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group32498">
+         <obj_property name="label">file</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/read_write_in">
+            <obj_property name="ElementShortName">read_write_in</obj_property>
+            <obj_property name="ObjectShortName">read_write_in</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/read_write_out">
+            <obj_property name="ElementShortName">read_write_out</obj_property>
+            <obj_property name="ObjectShortName">read_write_out</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/reserve_clusters_in">
+            <obj_property name="ElementShortName">reserve_clusters_in[21:0]</obj_property>
+            <obj_property name="ObjectShortName">reserve_clusters_in[21:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/reserve_clusters_out">
+            <obj_property name="ElementShortName">reserve_clusters_out[21:0]</obj_property>
+            <obj_property name="ObjectShortName">reserve_clusters_out[21:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/opened">
+            <obj_property name="ElementShortName">opened</obj_property>
+            <obj_property name="ObjectShortName">opened</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/size_in">
+            <obj_property name="ElementShortName">size_in[31:0]</obj_property>
+            <obj_property name="ObjectShortName">size_in[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/size">
+            <obj_property name="ElementShortName">size[31:0]</obj_property>
+            <obj_property name="ObjectShortName">size[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/open_file">
+            <obj_property name="ElementShortName">open_file</obj_property>
+            <obj_property name="ObjectShortName">open_file</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/close_file">
+            <obj_property name="ElementShortName">close_file</obj_property>
+            <obj_property name="ObjectShortName">close_file</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/format">
+            <obj_property name="ElementShortName">format</obj_property>
+            <obj_property name="ObjectShortName">format</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/data_in">
+            <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+            <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/data_out">
+            <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+            <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/enable_in">
+            <obj_property name="ElementShortName">enable_in</obj_property>
+            <obj_property name="ObjectShortName">enable_in</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/enable_out">
+            <obj_property name="ElementShortName">enable_out</obj_property>
+            <obj_property name="ObjectShortName">enable_out</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/sectors_per_cluster">
+            <obj_property name="ElementShortName">sectors_per_cluster[7:0]</obj_property>
+            <obj_property name="ObjectShortName">sectors_per_cluster[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/data_area_offset">
+            <obj_property name="ElementShortName">data_area_offset[31:0]</obj_property>
+            <obj_property name="ObjectShortName">data_area_offset[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_read">
+            <obj_property name="ElementShortName">fifo_read</obj_property>
+            <obj_property name="ObjectShortName">fifo_read</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_write">
+            <obj_property name="ElementShortName">fifo_write</obj_property>
+            <obj_property name="ObjectShortName">fifo_write</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_empty">
+            <obj_property name="ElementShortName">fifo_empty</obj_property>
+            <obj_property name="ObjectShortName">fifo_empty</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_full">
+            <obj_property name="ElementShortName">fifo_full</obj_property>
+            <obj_property name="ObjectShortName">fifo_full</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/sector_num">
+            <obj_property name="ElementShortName">sector_num[31:0]</obj_property>
+            <obj_property name="ObjectShortName">sector_num[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/request_clusters">
+            <obj_property name="ElementShortName">request_clusters</obj_property>
+            <obj_property name="ObjectShortName">request_clusters</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fragment_in">
+            <obj_property name="ElementShortName">fragment_in</obj_property>
+            <obj_property name="ObjectShortName">fragment_in</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/last_fragment">
+            <obj_property name="ElementShortName">last_fragment</obj_property>
+            <obj_property name="ObjectShortName">last_fragment</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/write_clusters_chain">
+            <obj_property name="ElementShortName">write_clusters_chain</obj_property>
+            <obj_property name="ObjectShortName">write_clusters_chain</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fragment_out">
+            <obj_property name="ElementShortName">fragment_out</obj_property>
+            <obj_property name="ObjectShortName">fragment_out</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/update_file_info">
+            <obj_property name="ElementShortName">update_file_info</obj_property>
+            <obj_property name="ObjectShortName">update_file_info</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/info_sector_num">
+            <obj_property name="ElementShortName">info_sector_num[31:0]</obj_property>
+            <obj_property name="ObjectShortName">info_sector_num[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/info_addr_offset_in">
+            <obj_property name="ElementShortName">info_addr_offset_in[3:0]</obj_property>
+            <obj_property name="ObjectShortName">info_addr_offset_in[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/info_addr_offset_out">
+            <obj_property name="ElementShortName">info_addr_offset_out[3:0]</obj_property>
+            <obj_property name="ObjectShortName">info_addr_offset_out[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/starting_cluster">
+            <obj_property name="ElementShortName">starting_cluster[27:0]</obj_property>
+            <obj_property name="ObjectShortName">starting_cluster[27:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/op_ack">
+            <obj_property name="ElementShortName">op_ack</obj_property>
+            <obj_property name="ObjectShortName">op_ack</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/file_debug">
+            <obj_property name="ElementShortName">file_debug[7:0]</obj_property>
+            <obj_property name="ObjectShortName">file_debug[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/file_error">
+            <obj_property name="ElementShortName">file_error</obj_property>
+            <obj_property name="ObjectShortName">file_error</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/debug_addr">
+            <obj_property name="ElementShortName">debug_addr[15:0]</obj_property>
+            <obj_property name="ObjectShortName">debug_addr[15:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/debug_data">
+            <obj_property name="ElementShortName">debug_data[31:0]</obj_property>
+            <obj_property name="ObjectShortName">debug_data[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/read_write_i">
+            <obj_property name="ElementShortName">read_write_i</obj_property>
+            <obj_property name="ObjectShortName">read_write_i</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/filename_i">
+            <obj_property name="ElementShortName">filename_i[87:0]</obj_property>
+            <obj_property name="ObjectShortName">filename_i[87:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/date_time_i">
+            <obj_property name="ElementShortName">date_time_i[39:0]</obj_property>
+            <obj_property name="ObjectShortName">date_time_i[39:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/reserve_clusters_i">
+            <obj_property name="ElementShortName">reserve_clusters_i[21:0]</obj_property>
+            <obj_property name="ObjectShortName">reserve_clusters_i[21:0]</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/listing_cluster_done">
+            <obj_property name="ElementShortName">listing_cluster_done</obj_property>
+            <obj_property name="ObjectShortName">listing_cluster_done</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/cluster_list_complete">
+            <obj_property name="ElementShortName">cluster_list_complete</obj_property>
+            <obj_property name="ObjectShortName">cluster_list_complete</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/can_read">
+            <obj_property name="ElementShortName">can_read</obj_property>
+            <obj_property name="ObjectShortName">can_read</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fully_read">
+            <obj_property name="ElementShortName">fully_read</obj_property>
+            <obj_property name="ObjectShortName">fully_read</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/can_write">
+            <obj_property name="ElementShortName">can_write</obj_property>
+            <obj_property name="ObjectShortName">can_write</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/no_clusters_reserved">
+            <obj_property name="ElementShortName">no_clusters_reserved</obj_property>
+            <obj_property name="ObjectShortName">no_clusters_reserved</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/cluster_chain_done">
+            <obj_property name="ElementShortName">cluster_chain_done</obj_property>
+            <obj_property name="ObjectShortName">cluster_chain_done</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/info_sector_num_i">
+            <obj_property name="ElementShortName">info_sector_num_i[31:0]</obj_property>
+            <obj_property name="ObjectShortName">info_sector_num_i[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/info_addr_offset_i">
+            <obj_property name="ElementShortName">info_addr_offset_i[3:0]</obj_property>
+            <obj_property name="ObjectShortName">info_addr_offset_i[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/starting_cluster_i">
+            <obj_property name="ElementShortName">starting_cluster_i[27:0]</obj_property>
+            <obj_property name="ObjectShortName">starting_cluster_i[27:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/opened_i">
+            <obj_property name="ElementShortName">opened_i</obj_property>
+            <obj_property name="ObjectShortName">opened_i</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/size_i">
+            <obj_property name="ElementShortName">size_i[31:0]</obj_property>
+            <obj_property name="ObjectShortName">size_i[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/total_bytes_cnt">
+            <obj_property name="ElementShortName">total_bytes_cnt</obj_property>
+            <obj_property name="ObjectShortName">total_bytes_cnt</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/read_sector_i">
+            <obj_property name="ElementShortName">read_sector_i</obj_property>
+            <obj_property name="ObjectShortName">read_sector_i</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/write_sector_i">
+            <obj_property name="ElementShortName">write_sector_i</obj_property>
+            <obj_property name="ObjectShortName">write_sector_i</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/request_close">
+            <obj_property name="ElementShortName">request_close</obj_property>
+            <obj_property name="ObjectShortName">request_close</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/frag">
+            <obj_property name="ElementShortName">frag[0:511]</obj_property>
+            <obj_property name="ObjectShortName">frag[0:511]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fragment_read">
+            <obj_property name="ElementShortName">fragment_read</obj_property>
+            <obj_property name="ObjectShortName">fragment_read</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fragment_write">
+            <obj_property name="ElementShortName">fragment_write</obj_property>
+            <obj_property name="ObjectShortName">fragment_write</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/frag_write_en">
+            <obj_property name="ElementShortName">frag_write_en</obj_property>
+            <obj_property name="ObjectShortName">frag_write_en</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/frag_ptr">
+            <obj_property name="ElementShortName">frag_ptr</obj_property>
+            <obj_property name="ObjectShortName">frag_ptr</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/nb_frag">
+            <obj_property name="ElementShortName">nb_frag</obj_property>
+            <obj_property name="ObjectShortName">nb_frag</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/last_fragment_dly">
+            <obj_property name="ElementShortName">last_fragment_dly</obj_property>
+            <obj_property name="ObjectShortName">last_fragment_dly</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/concatenate_frag">
+            <obj_property name="ElementShortName">concatenate_frag</obj_property>
+            <obj_property name="ObjectShortName">concatenate_frag</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/next_frag">
+            <obj_property name="ElementShortName">next_frag</obj_property>
+            <obj_property name="ObjectShortName">next_frag</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/waiting_new_sector">
+            <obj_property name="ElementShortName">waiting_new_sector</obj_property>
+            <obj_property name="ObjectShortName">waiting_new_sector</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/wait_new_fragment">
+            <obj_property name="ElementShortName">wait_new_fragment[2:0]</obj_property>
+            <obj_property name="ObjectShortName">wait_new_fragment[2:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/current_frag">
+            <obj_property name="ElementShortName">current_frag</obj_property>
+            <obj_property name="ObjectShortName">current_frag</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/start_cluster">
+            <obj_property name="ElementShortName">start_cluster[27:0]</obj_property>
+            <obj_property name="ObjectShortName">start_cluster[27:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/current_frag_size">
+            <obj_property name="ElementShortName">current_frag_size[21:0]</obj_property>
+            <obj_property name="ObjectShortName">current_frag_size[21:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/sector_num_i">
+            <obj_property name="ElementShortName">sector_num_i[31:0]</obj_property>
+            <obj_property name="ObjectShortName">sector_num_i[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/sector_ready">
+            <obj_property name="ElementShortName">sector_ready</obj_property>
+            <obj_property name="ObjectShortName">sector_ready</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/sect_in_clust_cnt">
+            <obj_property name="ElementShortName">sect_in_clust_cnt[7:0]</obj_property>
+            <obj_property name="ObjectShortName">sect_in_clust_cnt[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/clust_in_frag_cnt">
+            <obj_property name="ElementShortName">clust_in_frag_cnt[21:0]</obj_property>
+            <obj_property name="ObjectShortName">clust_in_frag_cnt[21:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/calc_sector">
+            <obj_property name="ElementShortName">calc_sector</obj_property>
+            <obj_property name="ObjectShortName">calc_sector</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/calc_sector_bsy">
+            <obj_property name="ElementShortName">calc_sector_bsy</obj_property>
+            <obj_property name="ObjectShortName">calc_sector_bsy</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/rem_shifts">
+            <obj_property name="ElementShortName">rem_shifts[6:0]</obj_property>
+            <obj_property name="ObjectShortName">rem_shifts[6:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/buffer_to_shift">
+            <obj_property name="ElementShortName">buffer_to_shift[31:0]</obj_property>
+            <obj_property name="ObjectShortName">buffer_to_shift[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/block_num">
+            <obj_property name="ElementShortName">block_num[31:0]</obj_property>
+            <obj_property name="ObjectShortName">block_num[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/block_num_rdy">
+            <obj_property name="ElementShortName">block_num_rdy</obj_property>
+            <obj_property name="ObjectShortName">block_num_rdy</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_data_in">
+            <obj_property name="ElementShortName">fifo_data_in[7:0]</obj_property>
+            <obj_property name="ObjectShortName">fifo_data_in[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_dwrite">
+            <obj_property name="ElementShortName">fifo_dwrite</obj_property>
+            <obj_property name="ObjectShortName">fifo_dwrite</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_full_n">
+            <obj_property name="ElementShortName">fifo_full_n</obj_property>
+            <obj_property name="ObjectShortName">fifo_full_n</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_elemts">
+            <obj_property name="ElementShortName">fifo_elemts</obj_property>
+            <obj_property name="ObjectShortName">fifo_elemts</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_data_out">
+            <obj_property name="ElementShortName">fifo_data_out[7:0]</obj_property>
+            <obj_property name="ObjectShortName">fifo_data_out[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_dread">
+            <obj_property name="ElementShortName">fifo_dread</obj_property>
+            <obj_property name="ObjectShortName">fifo_dread</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_empty_n">
+            <obj_property name="ElementShortName">fifo_empty_n</obj_property>
+            <obj_property name="ObjectShortName">fifo_empty_n</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/fifo_reset">
+            <obj_property name="ElementShortName">fifo_reset</obj_property>
+            <obj_property name="ObjectShortName">fifo_reset</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/enable_out_i">
+            <obj_property name="ElementShortName">enable_out_i</obj_property>
+            <obj_property name="ObjectShortName">enable_out_i</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/CLK_FREQ_HZ">
+            <obj_property name="ElementShortName">CLK_FREQ_HZ</obj_property>
+            <obj_property name="ObjectShortName">CLK_FREQ_HZ</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/VIVADO_SYNTH">
+            <obj_property name="ElementShortName">VIVADO_SYNTH</obj_property>
+            <obj_property name="ObjectShortName">VIVADO_SYNTH</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/LITTLE_ENDIAN">
+            <obj_property name="ElementShortName">LITTLE_ENDIAN</obj_property>
+            <obj_property name="ObjectShortName">LITTLE_ENDIAN</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/ID">
+            <obj_property name="ElementShortName">ID</obj_property>
+            <obj_property name="ObjectShortName">ID</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/WORD_SIZE_PW2">
+            <obj_property name="ElementShortName">WORD_SIZE_PW2</obj_property>
+            <obj_property name="ObjectShortName">WORD_SIZE_PW2</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/FIFO_DEPTH">
+            <obj_property name="ElementShortName">FIFO_DEPTH</obj_property>
+            <obj_property name="ObjectShortName">FIFO_DEPTH</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/NOTHING_TO_SAY">
+            <obj_property name="ElementShortName">NOTHING_TO_SAY[7:0]</obj_property>
+            <obj_property name="ObjectShortName">NOTHING_TO_SAY[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/FILE_OPENED_R">
+            <obj_property name="ElementShortName">FILE_OPENED_R[7:0]</obj_property>
+            <obj_property name="ObjectShortName">FILE_OPENED_R[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/FILE_OPENED_W">
+            <obj_property name="ElementShortName">FILE_OPENED_W[7:0]</obj_property>
+            <obj_property name="ObjectShortName">FILE_OPENED_W[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/CANNOT_LOAD_ALL_FRAGMENT">
+            <obj_property name="ElementShortName">CANNOT_LOAD_ALL_FRAGMENT[7:0]</obj_property>
+            <obj_property name="ObjectShortName">CANNOT_LOAD_ALL_FRAGMENT[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/FILE_FULL">
+            <obj_property name="ElementShortName">FILE_FULL[7:0]</obj_property>
+            <obj_property name="ObjectShortName">FILE_FULL[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/BYTES_PER_SECTOR">
+            <obj_property name="ElementShortName">BYTES_PER_SECTOR</obj_property>
+            <obj_property name="ObjectShortName">BYTES_PER_SECTOR</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/WORD_SIZE">
+            <obj_property name="ElementShortName">WORD_SIZE</obj_property>
+            <obj_property name="ObjectShortName">WORD_SIZE</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/SD_write_buffer">
+            <obj_property name="ElementShortName">SD_write_buffer[2:0]</obj_property>
+            <obj_property name="ObjectShortName">SD_write_buffer[2:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/SD_read_buffer">
+            <obj_property name="ElementShortName">SD_read_buffer[2:0]</obj_property>
+            <obj_property name="ObjectShortName">SD_read_buffer[2:0]</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/CLUSTER_BIT">
+            <obj_property name="ElementShortName">CLUSTER_BIT</obj_property>
+            <obj_property name="ObjectShortName">CLUSTER_BIT</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/MAX_CLUSTER_PER_FILE_PW2">
+            <obj_property name="ElementShortName">MAX_CLUSTER_PER_FILE_PW2</obj_property>
+            <obj_property name="ObjectShortName">MAX_CLUSTER_PER_FILE_PW2</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/FRAG_BIT_SIZE">
+            <obj_property name="ElementShortName">FRAG_BIT_SIZE</obj_property>
+            <obj_property name="ObjectShortName">FRAG_BIT_SIZE</obj_property>
+         </wvobject>
+         <wvobject type="other" fp_name="/tb_SDcard_FAT32/SDcard_FAT/file_1/MAX_NB_FRAG">
+            <obj_property name="ElementShortName">MAX_NB_FRAG</obj_property>
+            <obj_property name="ObjectShortName">MAX_NB_FRAG</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

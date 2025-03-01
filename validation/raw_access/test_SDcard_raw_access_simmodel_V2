@@ -1,0 +1,132 @@
+#!/usr/bin/env python3
+
+
+import subprocess
+import os
+import sys
+
+IMAGE_BLOCKS = 8000
+
+def run(cmd):
+    p = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, bufsize=-1)
+    output, error = p.communicate()
+    if p.returncode != 0:
+        print("="*60)
+        print("ERROR in command\n    {}".format(cmd))
+        print("----------- stdout ------------")
+        print(output.decode(), end="", flush=True)
+        print("----------- stderr ------------")
+        print(error.decode(),  end="", flush=True)
+        quit(1)
+
+run(["dd", "if=/dev/urandom", "of=/tmp/random_in.dat", "bs=512", "count={}".format(IMAGE_BLOCKS)])
+run(["./split_image.py", "/tmp/random_in.dat", "/tmp/random_dir"])
+run(["ghdl", "-a", "SDcard_raw_access_simmodel_V2.vhd", "tb_SDcard_raw_access_simmodel_V2.vhd"])
+run(["ghdl", "-e", "tb_SDcard_raw_access_simmodel_v2"])
+run(["ghdl", "-r", "tb_SDcard_raw_access_simmodel_v2", "--stop-time=20us", "-gIMAGE_DIRNAME=/tmp/random_dir/"])
+run(["./split_image.py", "/tmp/random_dir", "/tmp/random_out.dat"])
+
+with open("/tmp/random_in.dat", "rb") as binfile:
+    blocks_in = []
+    for _ in range(IMAGE_BLOCKS):
+        blocks_in.append(binfile.read(512))
+with open("/tmp/random_out.dat", "rb") as binfile:
+    blocks_out = []
+    for _ in range(IMAGE_BLOCKS):
+        blocks_out.append(binfile.read(512))
+
+
+success = True
+if blocks_out[0x1100] != b"\xAA"*512 :
+    print("ERROR : write default value in block 0x801 failed")
+    success = False
+elif blocks_out[0x1100] == blocks_in[0x1100]:
+    print("WARNING : could not test 'write default value'")
+    success = False
+blocks_out[0x1100] = None
+blocks_in[0x1100]  = None
+
+if blocks_out[0x300] != blocks_in[0x1000]:
+    print("ERROR : block copy failed")
+    print(blocks_in[0x1000])
+    print(blocks_out[0x300])
+    success = False
+elif blocks_out[0x300] == blocks_in[0x300]:
+    print("WARNING : could not test 'block copy'")
+    success = False
+blocks_out[0x300] = None
+blocks_in[0x300]  = None
+
+if blocks_out[0x200] != bytes(list(range(256))*2):
+    print("ERROR : block write with custom value failed")
+    success = False
+elif blocks_out[0x200] == blocks_in[0x200]:
+    print("WARNING : could not test 'block write with custom value'")
+    success = False
+blocks_out[0x200] = None
+blocks_in[0x200]  = None
+
+if blocks_out[0x100] != b"\xFF"*512 :
+    print("ERROR : block erase failed")
+    success = False
+elif blocks_out[0x100] == blocks_in[0x100]:
+    print("WARNING : could not test 'block erase'")
+    success = False
+
+for i in range(0xFFC, 0x1004):
+    if blocks_out[i] != blocks_out[0x100]:
+        print("ERROR : multiple block erase failed")
+        success = False
+    elif blocks_out[i] == blocks_in[i]:
+        print("WARNING : could not test 'multiple block erase'")
+        success = False
+    blocks_out[i] = None
+    blocks_in[i]  = None
+blocks_out[0x100] = None
+blocks_in[0x100]  = None
+
+for i in range(4):
+    if blocks_out[0x7FE+i] != bytes([42+i] + [42]*511):
+        print("ERROR : multiple block write failed")
+        success = False
+    elif blocks_out[0x7FE+i] == blocks_in[0x7FE+i]:
+        print("WARNING : could not test 'multiple block write'")
+        success = False
+    blocks_out[0x7FE+i] = None
+    blocks_in[0x7FE+i]  = None
+
+if blocks_out[0x802] != bytes(list(range(256))*2):
+    print("ERROR : buffer change during multiple write failed")
+    success = False
+elif blocks_out[0x802] == blocks_in[0x802]:
+    print("WARNING : could not test 'buffer change while multiple write'")
+    success = False
+blocks_out[0x802] = None
+blocks_in[0x802]  = None
+
+for i in range(4):
+    if blocks_out[0x500+i] != blocks_in[0x17FE+i]:
+        print("ERROR : multiple block copy (read) failed")
+        success = False
+    elif blocks_out[0x500+i] == blocks_in[0x500+i]:
+        print("WARNING : could not test 'multiple block copy (read)'")
+        success = False
+    blocks_out[0x500+i] = None
+    blocks_in[0x500+i]  = None
+
+
+
+
+
+for i in range(IMAGE_BLOCKS):
+    if blocks_out[i] != blocks_in[i]:
+        print("ERROR : data corruption in blocks that shouldn't have changed (block {:X})".format(i))
+        success = False
+        break
+
+if success:
+    print("All tests performed successfully")
+
+if not "keep" in sys.argv:
+    run(["rm", "-rf", "/tmp/random_dir", "/tmp/random_in.dat", "/tmp/random_out.dat", "work-obj93.cf"])
+

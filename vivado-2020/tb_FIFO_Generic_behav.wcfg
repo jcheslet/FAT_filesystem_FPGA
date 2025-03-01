@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_FIFO_Generic_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_FIFO_Generic" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="460767fs"></ZoomStartTime>
+      <ZoomEndTime time="479849fs"></ZoomEndTime>
+      <Cursor1Time time="515000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="39"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject type="logic" fp_name="/tb_FIFO_Generic/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FIFO_Generic/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider42565" type="divider">
+      <obj_property name="label">component IO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_FIFO_Generic/data_in">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FIFO_Generic/dwrite">
+      <obj_property name="ElementShortName">dwrite</obj_property>
+      <obj_property name="ObjectShortName">dwrite</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FIFO_Generic/full_n">
+      <obj_property name="ElementShortName">full_n</obj_property>
+      <obj_property name="ObjectShortName">full_n</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_FIFO_Generic/elemts">
+      <obj_property name="ElementShortName">elemts</obj_property>
+      <obj_property name="ObjectShortName">elemts</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_FIFO_Generic/data_out">
+      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FIFO_Generic/dread">
+      <obj_property name="ElementShortName">dread</obj_property>
+      <obj_property name="ObjectShortName">dread</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FIFO_Generic/empty_n">
+      <obj_property name="ElementShortName">empty_n</obj_property>
+      <obj_property name="ObjectShortName">empty_n</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group42567">
+      <obj_property name="label">component</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="other" fp_name="/tb_FIFO_Generic/fifo/read_index">
+         <obj_property name="ElementShortName">read_index</obj_property>
+         <obj_property name="ObjectShortName">read_index</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/tb_FIFO_Generic/fifo/write_index">
+         <obj_property name="ElementShortName">write_index</obj_property>
+         <obj_property name="ObjectShortName">write_index</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/tb_FIFO_Generic/fifo/nb_elemts">
+         <obj_property name="ElementShortName">nb_elemts</obj_property>
+         <obj_property name="ObjectShortName">nb_elemts</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_FIFO_Generic/fifo/fulln_i">
+         <obj_property name="ElementShortName">fulln_i</obj_property>
+         <obj_property name="ObjectShortName">fulln_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_FIFO_Generic/fifo/emptyn_i">
+         <obj_property name="ElementShortName">emptyn_i</obj_property>
+         <obj_property name="ObjectShortName">emptyn_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory">
+         <obj_property name="ElementShortName">memory[0:63][7:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[0:63][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[0]">
+            <obj_property name="ElementShortName">[0][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[1]">
+            <obj_property name="ElementShortName">[1][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[2]">
+            <obj_property name="ElementShortName">[2][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[3]">
+            <obj_property name="ElementShortName">[3][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[4]">
+            <obj_property name="ElementShortName">[4][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[5]">
+            <obj_property name="ElementShortName">[5][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[5][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[6]">
+            <obj_property name="ElementShortName">[6][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[6][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[7]">
+            <obj_property name="ElementShortName">[7][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[7][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[8]">
+            <obj_property name="ElementShortName">[8][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[8][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[9]">
+            <obj_property name="ElementShortName">[9][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[9][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[10]">
+            <obj_property name="ElementShortName">[10][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[10][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[11]">
+            <obj_property name="ElementShortName">[11][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[11][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[12]">
+            <obj_property name="ElementShortName">[12][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[12][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[13]">
+            <obj_property name="ElementShortName">[13][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[13][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[14]">
+            <obj_property name="ElementShortName">[14][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[14][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[15]">
+            <obj_property name="ElementShortName">[15][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[15][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[16]">
+            <obj_property name="ElementShortName">[16][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[16][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[17]">
+            <obj_property name="ElementShortName">[17][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[17][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[18]">
+            <obj_property name="ElementShortName">[18][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[18][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[19]">
+            <obj_property name="ElementShortName">[19][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[19][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[20]">
+            <obj_property name="ElementShortName">[20][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[20][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[21]">
+            <obj_property name="ElementShortName">[21][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[21][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[22]">
+            <obj_property name="ElementShortName">[22][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[22][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[23]">
+            <obj_property name="ElementShortName">[23][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[23][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[24]">
+            <obj_property name="ElementShortName">[24][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[24][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[25]">
+            <obj_property name="ElementShortName">[25][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[25][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[26]">
+            <obj_property name="ElementShortName">[26][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[26][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[27]">
+            <obj_property name="ElementShortName">[27][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[27][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[28]">
+            <obj_property name="ElementShortName">[28][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[28][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[29]">
+            <obj_property name="ElementShortName">[29][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[29][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[30]">
+            <obj_property name="ElementShortName">[30][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[30][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[31]">
+            <obj_property name="ElementShortName">[31][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[31][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[32]">
+            <obj_property name="ElementShortName">[32][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[32][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[33]">
+            <obj_property name="ElementShortName">[33][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[33][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[34]">
+            <obj_property name="ElementShortName">[34][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[34][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[35]">
+            <obj_property name="ElementShortName">[35][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[35][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[36]">
+            <obj_property name="ElementShortName">[36][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[36][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[37]">
+            <obj_property name="ElementShortName">[37][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[37][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[38]">
+            <obj_property name="ElementShortName">[38][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[38][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[39]">
+            <obj_property name="ElementShortName">[39][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[39][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[40]">
+            <obj_property name="ElementShortName">[40][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[40][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[41]">
+            <obj_property name="ElementShortName">[41][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[41][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[42]">
+            <obj_property name="ElementShortName">[42][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[42][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[43]">
+            <obj_property name="ElementShortName">[43][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[43][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[44]">
+            <obj_property name="ElementShortName">[44][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[44][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[45]">
+            <obj_property name="ElementShortName">[45][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[45][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[46]">
+            <obj_property name="ElementShortName">[46][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[46][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[47]">
+            <obj_property name="ElementShortName">[47][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[47][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[48]">
+            <obj_property name="ElementShortName">[48][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[48][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[49]">
+            <obj_property name="ElementShortName">[49][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[49][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[50]">
+            <obj_property name="ElementShortName">[50][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[50][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[51]">
+            <obj_property name="ElementShortName">[51][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[51][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[52]">
+            <obj_property name="ElementShortName">[52][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[52][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[53]">
+            <obj_property name="ElementShortName">[53][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[53][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[54]">
+            <obj_property name="ElementShortName">[54][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[54][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[55]">
+            <obj_property name="ElementShortName">[55][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[55][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[56]">
+            <obj_property name="ElementShortName">[56][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[56][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[57]">
+            <obj_property name="ElementShortName">[57][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[57][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[58]">
+            <obj_property name="ElementShortName">[58][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[58][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[59]">
+            <obj_property name="ElementShortName">[59][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[59][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[60]">
+            <obj_property name="ElementShortName">[60][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[60][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[61]">
+            <obj_property name="ElementShortName">[61][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[61][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[62]">
+            <obj_property name="ElementShortName">[62][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[62][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/memory[63]">
+            <obj_property name="ElementShortName">[63][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[63][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_FIFO_Generic/fifo/prefetched_data">
+         <obj_property name="ElementShortName">prefetched_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">prefetched_data[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_FIFO_Generic/fifo/prefetched_full">
+         <obj_property name="ElementShortName">prefetched_full</obj_property>
+         <obj_property name="ObjectShortName">prefetched_full</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="divider42566" type="divider">
+      <obj_property name="label">generated data</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#DCDCDC</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_FIFO_Generic/data">
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_FIFO_Generic/nb_data_writted">
+      <obj_property name="ElementShortName">nb_data_writted</obj_property>
+      <obj_property name="ObjectShortName">nb_data_writted</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_FIFO_Generic/nb_data_read">
+      <obj_property name="ElementShortName">nb_data_read</obj_property>
+      <obj_property name="ObjectShortName">nb_data_read</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider42564" type="divider">
+      <obj_property name="label">constant</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_FIFO_Generic/test_nb">
+      <obj_property name="ElementShortName">test_nb</obj_property>
+      <obj_property name="ObjectShortName">test_nb</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_FIFO_Generic/DATA_SIZE">
+      <obj_property name="ElementShortName">DATA_SIZE</obj_property>
+      <obj_property name="ObjectShortName">DATA_SIZE</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_FIFO_Generic/FIFO_DEPTH">
+      <obj_property name="ElementShortName">FIFO_DEPTH</obj_property>
+      <obj_property name="ObjectShortName">FIFO_DEPTH</obj_property>
+   </wvobject>
+</wave_config>
