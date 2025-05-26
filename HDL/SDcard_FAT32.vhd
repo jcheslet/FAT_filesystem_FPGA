@@ -6,7 +6,7 @@
 --
 -- @copyright
 -- SPDX-FileCopyrightText: © 2021 Jeremy Cheslet <jeremy.cheslet@u-bordeaux.fr>
--- SPDX-License-Identifier: GPL-3.0-or-later
+-- SPDX-License-Identifier: MIT
 ----------------------------------------------------------------------------------------------------
 -- Working version.
 -- TODO list :

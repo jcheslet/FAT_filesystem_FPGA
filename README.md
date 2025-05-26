@@ -130,7 +130,7 @@ _Multi-operation is a mode to accelerate reading and writting that use SD card i
 
 ## Disclaimer
 
-This project is few years old. Please note that codes, comments and documentation quality might be random and/or outdated.
+This project is few years old. Please note that codes, comments and documentation quality might be low and/or outdated.
 
 While efforts were made to ensure functionality and clarity, there may be areas that require improvement or further optimization.
 
